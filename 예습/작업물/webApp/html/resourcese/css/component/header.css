@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+nav {
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+#navigation_Logo {
+    position: relative;
+    width: 50%;
+}
+#navigation_Logo h1 {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+}
+#navigation_Menu {
+    width: 50%;
+    position: relative;
+}
+#menu_Btn {
+    position: absolute;
+    top: 34px;
+    right: 80px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
