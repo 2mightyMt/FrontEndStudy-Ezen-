@@ -1,12 +1,38 @@
-.img_link {
+.font {
+    font-family: pretendard;
+}
+
+.container-cont {
+    width: 300px;
+    height: 542.8px;
+    position: relative;
+}
+
+.img_link > img {
     display: block;
     width: 300px;
     height: 400px;
+    margin-bottom: 20px;
 }
 
-.profile_link {
-    display: block;
+.profile_link > img {
+    display: inline-block;
     width: 36px;
     height: 36px;
-    border-radius: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.first-line {
+    display: flex;
+    align-items: center;
+}
+
+.first-line a::after {
+    content: '"\f004"';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: 95px;
+    right: 0;
 }
