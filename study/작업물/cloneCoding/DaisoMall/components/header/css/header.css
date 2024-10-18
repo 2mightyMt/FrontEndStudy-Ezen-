@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
+}
+
+#logo {
+    width: 156px;
+    height: 78px;
+    position: relative; /* 부모 요소에 상대적인 위치를 설정 */
+}
+
+#logo a {
+    display: block; /* a 태그를 블록 요소로 만들어 부모 요소 크기에 맞게 확장 */
+    width: 100%;
+    height: 100%;
+}
+
+#logo a img {
+    width: 100%; /* 부모의 크기에 맞게 이미지 조정 */
+    height: 100%;
+    object-fit: contain; /* 이미지 비율을 유지하면서 크기 조정 */
+}
+
+.header-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #d70011;
+    height: 78px;
+}
+
+.grid-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    height: 78px;
+}
+
+.header-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.search {
+    position: relative;
+    width: 450px; /* 검색바 전체 너비 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 255px;
+    width: 450px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50px;
+    border: none;
+}
+
+.search-bt {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 42px;
+    height: 42px;
+    background: #d70011;
+    border: none;
+    border-radius: 50px;
+}
+
+/* 챗 지피티가 써준 내용..
+.search-bar {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 24px;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bt {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #d70011;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0; /* 텍스트를 보이지 않게 함 */
+/*  outline: none;
+}
+
+.search-bt::before {
+  content: ''; 
+  font-size: 18px;
+  color: #fff;
+}
+
+위와 같이 했을때 검색바가 위에 붙으면 할것
+
+.search {
+    position: relative;
+    width: 450px; /* 검색바 전체 너비 */
+    /*margin: 20px auto; /* 위아래 여백을 주고, 가로는 가운데 정렬 */
+
+/*
+.header-cont {
+    display: flex;
+    justify-content: center; /* 가로 방향 가운데 정렬 */
+    /*align-items: center; /* 세로 방향 가운데 정렬 */
+   /* height: 100px; 
+  
