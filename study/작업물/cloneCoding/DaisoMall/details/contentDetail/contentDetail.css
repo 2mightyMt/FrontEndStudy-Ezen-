@@ -1,0 +1,30 @@
+.content-section {
+    width: 1280px;
+    height: 1108px;
+    background: powderblue;
+}
+
+.product-crumb {
+    width: 1280px;
+    background: pink;
+    color: #646f7c;
+    font-weight: 400;
+    margin: 14px 0;
+}
+
+.goods-thum-wrap {
+    width: 570px;
+    height: 878px;
+    background: darkcyan;
+    float: left;
+}
+
+.thumb-img {
+}
+
+.goods-detail {
+    width: 710px;
+    height: 1069.53px;
+    background: cadetblue;
+    float: left;
+}
