@@ -60,9 +60,19 @@
 
 .heart-ct {
     position: absolute;
-    top: 5px;
+    top: 0;
     right: 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
 }
+
+.heart-img {
+    display: block;
+    width: 18px;
+    height: 16px;
+}
+
 .txt1 {
     font-size: 18px;
     font-weight: 400;
