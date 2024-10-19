@@ -1,38 +1,85 @@
-.font {
-    font-family: pretendard;
+/* reset */
+* {
+    font-family: Pretendard;
+    font-weight: 400px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-
-.container-cont {
-    width: 300px;
-    height: 542.8px;
-    position: relative;
-}
-
-.img_link > img {
+/* img */
+.ep-img__link {
     display: block;
-    width: 300px;
-    height: 400px;
-    margin-bottom: 20px;
+    width: 300;
+    height: 400;
+}
+/* detail */
+/* container first, 위에서부터, 왼쪽에서부터 */
+.ep-detail {
+    margin: 10px 0 28px;
+    width: 300;
 }
 
-.profile_link > img {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.first-line {
+.fs-labels {
+    position: relative;
     display: flex;
     align-items: center;
+    width: 300px;
 }
 
-.first-line a::after {
-    content: '"\f004"';
-    font-family: 'Line Awesome Free';
-    font-weight: 900;
+.profile-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nick-name {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #111111;
+    margin-left: 8px;
+}
+
+.nick-name::after {
+    display: inline-block;
+    margin-left: 4px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url('./img/D.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heart-ct {
     position: absolute;
-    bottom: 95px;
+    top: 5px;
     right: 0;
+}
+.txt1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #4d4d4d;
+    margin-top: 8px;
+}
+
+.last-labels {
+    margin-top: 15px;
+}
+.label-font {
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #808080;
+}
+
+.bold {
+    font-weight: 700;
 }
