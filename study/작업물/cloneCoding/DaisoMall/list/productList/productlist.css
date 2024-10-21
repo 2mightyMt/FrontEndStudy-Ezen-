@@ -1,31 +1,43 @@
-/* 제품 이미지 */
 * {
     font-family: Pretendard;
     font-weight: 400px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-
-/* 제품 정보 */
-.product-information {
-    display: flex;
-    flex-direction: column;
+.product1 {
+    width: 233.6px;
+    overflow: hidden;
 }
-
-.value {
-    font-size: 23.06px;
-    color: #111111;
+.img {
+    object-fit: cover;
 }
-
-.tit {
-    font-size: 1.2rem;
-    margin: 5px 0;
+.price {
+    font-size: 22px;
+    line-height: 30.8px;
 }
-
-.review {
-    font-size: 1rem;
-    color: #555;
+.price span {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30.8px;
 }
-
-.detail {
-    font-size: 0.9rem;
-    color: #999;
+/* .detail {
+} */
+.detail span {
+    padding-right: 6.66px;
+    margin-right: 6.66px;
+    border-right: 1px solid #cccccc;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+.detail p {
+    font-size: 18px;
+    line-height: 25.2px;
+}
+.label {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
 }
