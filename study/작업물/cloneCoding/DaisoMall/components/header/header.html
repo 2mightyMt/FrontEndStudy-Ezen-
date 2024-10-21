@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>다이소몰</title>
+
+        <!-- 라인 어썸 -->
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
         <link rel="stylesheet" href="../header/css/header2.css" />
     </head>
     <body>
@@ -22,15 +28,27 @@
                         <div class="header-cont">
                             <form class="search" action="#" method="get">
                                 <input class="search-bar" type="text" placeholder="검색어를 입력하세요" />
-                                <button class="search-bt"></button>
+                                <button class="search-bt">
+                                    <!-- <div class="search-bt-icon"></div> -->
+                                </button>
                             </form>
-                            <div class="search-realtime">동파육</div>
+                            <ul class="search-realtime">
+                                <li class="ranking">14</li>
+                                <li>
+                                    <a href="#">동파육</a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="header-util">
-                            <div class="h-util-today">오늘의 발견</div>
+                            <div class="h-util-today">
+                                <img src="../header/images/util-today.png" alt="오늘의 발견" />
+                            </div>
                             <ul class="h-util-icon">
-                                <li>마이페이지</li>
-                                <li>장바구니</li>
+                                <li class="my-page">마이페이지</li>
+                                <li class="cart">장바구니</li>
                             </ul>
                         </div>
                     </div>
@@ -38,18 +56,23 @@
                 <nav class="nav-wrap">
                     <div class="nav-catg">
                         <div class="all-menu"></div>
-                        <div class="event-bt">다꾸페</div>
+                        <div class="event-bt">
+                            <img
+                                src="../header/images/M4OYrFA5mHGOmPeoRb34이지웨어_GNBM4OYrFA5mHGOmPeoRb34.jpg"
+                                alt="패션신상템"
+                            />
+                        </div>
                         <ul class="catg">
-                            <li>홈</li>
-                            <li>신상</li>
-                            <li>랭킹</li>
-                            <li>기획전</li>
-                            <li>뷰티</li>
+                            <li><a href="#">홈</a></li>
+                            <li><a href="#">신상</a></li>
+                            <li><a href="#">랭킹</a></li>
+                            <li><a href="#">기획전</a></li>
+                            <li><a href="#">뷰티</a></li>
                         </ul>
                     </div>
                     <ul class="nav-util">
-                        <li>로그인</li>
-                        <li>회원가입</li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
                     </ul>
                 </nav>
             </div>
