@@ -12,18 +12,24 @@
 }
 .img {
     object-fit: cover;
+    width: 234px;
+    height: 311px;
 }
 .price {
     font-size: 22px;
     line-height: 30.8px;
+    padding-top: 12px;
+    padding-bottom: 8.5px;
 }
 .price span {
     font-weight: 700;
     font-size: 22px;
     line-height: 30.8px;
 }
-/* .detail {
-} */
+.detail {
+    padding-bottom: 37px;
+}
+
 .detail span {
     padding-right: 6.66px;
     margin-right: 6.66px;
@@ -37,7 +43,14 @@
     line-height: 25.2px;
 }
 .label {
+    color: #fff;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.4px;
+    background: #d70011;
+    border-radius: 4px;
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    /* padding: 6px; */
 }
