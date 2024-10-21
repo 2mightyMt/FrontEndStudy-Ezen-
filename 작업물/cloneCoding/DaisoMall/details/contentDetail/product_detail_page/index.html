@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 상세페이지</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../../shared/resources/css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="page-tit-area">
+            <div class="crumbs">
+                <div class="el-breadcrumb">
+                    <a href="#">홈</a>
+                    <a href="#">패션잡화</a>
+                    <a href="#">우천용품</a>
+                    <a href="#">접이식우산</a>
+                </div>
+            </div>
+            <div class="goods-unit">
+                <!-- 상품 구매 페이지 왼쪽영역 -->
+                <div class="goods-thum-wrap">
+                    <!-- 상품 이미지 스와이퍼 가져와야함-->
+                    <div class="swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <!-- 상품 이미지 스와이퍼 컨테이너 가져와야함 -->
+                    <div class="swiper-container"></div>
+                </div>
+                <!-- 상품 구매 페이지 오른쪽영역 -->
+                <div class="goods-detail">
+                    <div class="goods-price">
+                        <span class="goods-price__value">5,000</span>
+                        <span class="goods-price__won">원</span>
+                        <button class="share_btn">공유하기</button>
+                    </div>
+                    <div class="goods-tit">컬러 완전자동 3단 우산(그린,네이비)</div>
+                    <div class="guide-benefit">
+                        <!-- 혜택안내 -->
+                        <div class="guide__tit">혜택안내</div>
+                        <div class="el-collapse">
+                            <!-- 혜택 1 -->
+                            <div class="el-collapse-item">
+                                <div class="el-collapse-item__header">
+                                    <span class="ico-wrap">
+                                        <img src="https://cdn.daisomall.co.kr/apps/f/a1bae8769/img/ico_benefit_point.e3621e6.svg"
+                                            alt="포인트 혜택">
+                                    </span>
+                                    <p class="acco-tit">
+                                        구매 시, <em>0.1% 다이소 포인트</em> 적립
+                                    </p>
+                                    <div class="el-collapse-item__arrow">드롭다운버튼</div>
+                                    <div class="el-collapse-item__wrap">
+                                        <div class="el-collapse-item__content">
+                                            <div class="acco-cont">
+                                                <ul class="txt-list">
+                                                    <li>
+                                                        상품 구매 금액에 대해 0.1%를 다이소 포인트로 적립해드려요.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 혜택 2 -->
+                            <div class="el-collapse-item">
+                                <div class="el-collapse-item__header">
+                                    <span class="ico-wrap">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyBpZD0i6re466O5XzY2NjY0NyIgZGF0YS1uYW1lPSLqt7jro7kgNjY2NjQ3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEyMCAtODcyKSI+CiAgICA8cmVjdCBpZD0i7IKs6rCB7ZiVXzQ2NDgxNyIgZGF0YS1uYW1lPSLsgqzqsIHtmJUgNDY0ODE3IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMjAgODcyKSIgZmlsbD0iI2ZmZiIvPgogICAgPGcgaWQ9IuyCrOqwge2YlV80NjU3MzQiIGRhdGEtbmFtZT0i7IKs6rCB7ZiVIDQ2NTczNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyMi41IDg3Ni43NSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIxIj4KICAgICAgPHJlY3Qgd2lkdGg9IjE1IiBoZWlnaHQ9IjExLjI1IiByeD0iMiIgc3Ryb2tlPSJub25lIi8+CiAgICAgIDxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAuMjUiIHJ4PSIxLjUiIGZpbGw9Im5vbmUiLz4KICAgIDwvZz4KICAgIDxsaW5lIGlkPSLshKBfNjA2IiBkYXRhLW5hbWU9IuyEoCA2MDYiIHgyPSIxMy43NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyMy4xMjUgODc5Ljg3NSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                            alt="카드 혜택">
+                                    </span>
+                                    <p class="acco-tit">
+                                        다이소몰 결제혜택 안내
+                                    </p>
+                                    <div class="el-collapse-item__arrow">드롭다운버튼</div>
+                                    <div class="el-collapse-item__wrap">
+                                        <div class="acco-cont">
+                                            <ul class="list-ty-bullet">
+                                                <li>카카오페이 혜택 안내
+                                                    <ul class="inner-list">
+                                                        <li>- 카카오페이머니로 3만원 이상 결제 시 카카오페이포인트 1,500원 적립</li>
+                                                        <li>- 1일 1회, 기간 내 2회 참여가능</li>
+                                                        <li>※ 자세한 사항은 <a class="link-btn" href="#">카카오페이 이벤트 ☜
+                                                                클릭!</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-ty-bullet">
+                                                <li>다이소 삼성카드 혜택 안내
+                                                    <ul class="inner-list">
+                                                        <li>- 이용금액의 1% 결제일 할인</li>
+                                                        <li>- 전월실적 조건 및 할인한도 제한없음</li>
+                                                        <li>※ 자세한 사항은 <a class="link-btn" href="#">다이소 삼성카드 ☜클릭!</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 배송방법 -->
+                    <div class="guide-deliver">
+                        <div class="guide__tit">배송방법</div>
+                        <div class="el-radio-group">
+                            <div class="el-radio-group__1">
+                                <label role="radio" class="el-radio-button">
+                                    <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                        value="01">
+                                    <span class="tit-h6">택배배송</span>
+                                    <span>10/19(토)</span>
+                                    <span>도착예정</span>
+                                </label>
+                            </div>
+                            <div class="el-radio-group__2">
+                                <label role="radio" class="el-radio-button">
+                                    <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                        value="02">
+                                    <span class="tit-h6">매장픽업</span>
+                                    <span>내일 13시부터</span>
+                                    <span>픽업가능</span>
+                                </label>
+                            </div>
+                            <div class="el-radio-group__3">
+                                <label role="radio" class="el-radio-button">
+                                    <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                        value="03">
+                                    <span class="tit-h6">대량주문</span>
+                                    <span>7일 이내</span>
+                                    <span>도착예정</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 배송방법 버튼 모달창 -->
+                        <button class="el-button">
+                            <span>구매 가능 픽업매장 찾기</span>
+                        </button>
+                        <button class="el-button">
+                            <span>대량주문 가능 지역 확인</span>
+                        </button>
+                    </div>
+                    <!-- 배송방법 밑 안내글 -->
+                    <!-- 아이콘 before로 넣어야함 -->
+                    <div class="delivery-set">
+                        <ul class="addr-cont">
+                            <li class="info-item-1">
+                                <div class="info-item__login">
+                                    <p><a href="#">로그인</a> 후 정확한 배송 정보를 확인해 보세요</p>
+                                </div>
+                            </li>
+                            <li class="info-item-2">
+                                <div class="info-item__large">
+                                    <p>지금 결제하면</p>
+                                </div>
+                            </li>
+                            <li class="info-item-3">
+                                <div class="info-item__large">
+                                    <div class="info-item__large__tit">배송비</div>
+                                    <div class="info-item__large__con">
+                                        <p>3,000원 (한진택배)</p>
+                                        <p>30,000원 이상 구매 시 무료</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
