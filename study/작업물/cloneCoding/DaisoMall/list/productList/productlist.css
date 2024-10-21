@@ -1,0 +1,31 @@
+/* 제품 이미지 */
+* {
+    font-family: Pretendard;
+    font-weight: 400px;
+}
+
+/* 제품 정보 */
+.product-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 23.06px;
+    color: #111111;
+}
+
+.tit {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.review {
+    font-size: 1rem;
+    color: #555;
+}
+
+.detail {
+    font-size: 0.9rem;
+    color: #999;
+}
