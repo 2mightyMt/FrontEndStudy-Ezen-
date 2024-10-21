@@ -1,0 +1,102 @@
+/* reset */
+* {
+    font-family: Pretendard;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* img */
+.ep-img {
+    width: 300px;
+    height: 400px;
+}
+.ep-img__link {
+    display: block;
+}
+
+.ep-img__link img {
+    object-fit: cover;
+}
+/* detail */
+/* container first, 위에서부터, 왼쪽에서부터 */
+.ep-detail {
+    margin: 10px 0 28px;
+    width: 300;
+}
+
+.fs-labels {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.profile-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nick-name {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #111111;
+    margin-left: 8px;
+}
+
+.nick-name::after {
+    display: inline-block;
+    margin-left: 4px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url('./img/D.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heart-ct {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heart-img {
+    display: block;
+    width: 18px;
+    height: 16px;
+}
+
+.txt1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #4d4d4d;
+    margin-top: 8px;
+}
+
+.last-labels {
+    margin-top: 15px;
+}
+.label-font {
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #808080;
+}
+
+.bold {
+    font-weight: 700;
+}
