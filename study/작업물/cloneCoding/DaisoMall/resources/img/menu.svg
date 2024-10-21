@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="ico_hamb_menu" transform="translate(-390 10359.001)">
+    <g id="ico_area" transform="translate(390 -10359.001)" fill="#111" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="32" height="32" stroke="none"/>
+      <rect x="0.5" y="0.5" width="31" height="31" fill="none"/>
+    </g>
+    <rect id="사각형_462976" data-name="사각형 462976" width="24" height="3" transform="translate(394 -10353.001)" fill="#111"/>
+    <rect id="사각형_462977" data-name="사각형 462977" width="24" height="3" transform="translate(394 -10345.001)" fill="#111"/>
+    <rect id="사각형_462978" data-name="사각형 462978" width="24" height="3" transform="translate(394 -10337.001)" fill="#111"/>
+  </g>
+</svg>
