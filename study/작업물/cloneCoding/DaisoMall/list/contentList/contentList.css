@@ -7,10 +7,16 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* 제일 바깥 container */
+.contentList-editorPick-mc {
+    width: 300px;
+}
 /* img */
 .ep-img {
     width: 300px;
     height: 400px;
+    overflow: hidden;
+    position: relative;
 }
 .ep-img__link {
     display: block;
@@ -18,6 +24,9 @@
 
 .ep-img__link img {
     object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 /* detail */
 /* container first, 위에서부터, 왼쪽에서부터 */
