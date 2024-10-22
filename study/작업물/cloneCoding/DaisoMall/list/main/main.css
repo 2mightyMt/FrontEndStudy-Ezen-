@@ -1,11 +1,50 @@
+/* 페이지 전체를 중앙 정렬하는 스타일 */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+/* Swiper 전체 컨테이너 크기 설정 */
 .swiper-container {
     width: 680px;
     height: 618px;
 }
 
+/* 슬라이드 크기 및 간격 설정 */
 .swiper-slide {
+    width: 680px;
+    height: 618px;
+    margin-right: 28px; /* 슬라이드 간격 28px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 680px;
+    height: 508px;
+    object-fit: cover;
+}
+
+.swiper-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+/* 네비게이션 버튼 위치 조정 */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
     font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.swiper-button-prev.disabled,
+.swiper-button-next.disabled {
+    opacity: 0; /* 비활성화 상태에서 반투명 */
+    cursor: not-allowed; /* 비활성화된 버튼에 커서 모양 변경 */
 }
