@@ -285,6 +285,10 @@ body {
   width: 100%;
 }
 
+.depth1 > li:first-child .depth2 {
+  display: flex;
+}
+
 .depth1 > li > a {
   position: relative;
   display: flex;
@@ -297,6 +301,10 @@ body {
 
 .depth1 li a:hover {
   color: var(--primary-color);
+}
+
+.depth1 li:hover > a + .depth2 {
+  display: flex;
 }
 
 .depth1 > li > a::before {
@@ -321,7 +329,7 @@ body {
 
 .depth2 {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: space-between;
   top: 0;
   left: 192px;
