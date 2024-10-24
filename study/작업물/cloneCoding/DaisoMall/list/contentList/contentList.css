@@ -47,21 +47,27 @@
     color: #646f7c;
 }
 
-/* grid wrap 시작 */
-.grid-wrap {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-gap: 20px;
+/* flex wrap 시작 */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
 /* mc의 제일 바깥 container */
 .contentList-editorPick-mc {
     width: 300px;
+    height: auto;
+    margin: 0 10px;
 }
 /* img */
 .ep-img {
     width: 300px;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
