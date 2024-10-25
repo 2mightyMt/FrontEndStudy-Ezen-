@@ -7,14 +7,67 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-/* 제일 바깥 container */
+/* nav 공간 */
+.nav-space {
+    height: 126px;
+}
+
+/*  wrap */
+.contents-wrap {
+    margin: 40px auto 0;
+    width: 1280px;
+}
+
+.labels-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/* wrap안에 요소 시작 */
+.title-area {
+    margin-bottom: 16px;
+}
+
+.title-h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #161d24;
+}
+
+.title-h2 span {
+    color: #646f7c;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #646f7c;
+}
+
+/* flex wrap 시작 */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+/* mc의 제일 바깥 container */
 .contentList-editorPick-mc {
     width: 300px;
+    height: auto;
+    margin: 0 10px;
 }
 /* img */
 .ep-img {
     width: 300px;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     position: relative;
 }

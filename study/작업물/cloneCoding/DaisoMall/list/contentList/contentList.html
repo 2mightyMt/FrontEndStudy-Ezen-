@@ -13,32 +13,253 @@
         <link rel="stylesheet" href="./contentList.css" />
     </head>
     <body>
-        <h1>DaisoMall</h1>
-        <h2>contentList - main component</h2>
+        <div class="nav-space"></div>
 
-        <div class="contentList-editorPick-mc">
-            <div class="ep-img">
-                <a href="#" class="ep-img__link">
-                    <img src="./img/Background.png" alt="독서대" />
-                </a>
+        <div class="contents-wrap">
+            <div class="title-area">
+                <h2 class="title-h2">에디터's <span>Pick</span></h2>
+                <p class="subtitle">이번 주 선정된 최고의 콘텐츠!</p>
             </div>
-            <div class="ep-detail">
-                <div class="fs-labels">
-                    <a href="#" class="profile-link"
-                        ><img src="./img/profile.png" alt="profile" class="profile-img"
-                    /></a>
-                    <a href="#"><span class="nick-name">다링</span></a>
-                    <div class="heart-ct"><img src="./img/heart.png" alt="하트" class="heart-img" /></div>
+            <div class="labels-wrap">
+                <div class="buttons-wrap">
+                    <button>긴글</button>
+                    <button>짧은글</button>
+                    <button>쇼츠</button>
                 </div>
-                <p class="txt1">
-                    가을은 독서의 계절! 다이소 독서템으로 마 <br />
-                    음의 양식 채우기
-                </p>
-                <div class="last-labels">
-                    <span class="label-font bold">499명</span>
-                    <span class="label-font">봤어요</span>
-                </div>
+                <select id="dropdown" name="options">
+                    <option value="option1">추천순</option>
+                    <option value="option2">최신순</option>
+                    <option value="option3">조회수순</option>
+                    <option value="option3">댓글많은순</option>
+                </select>
             </div>
+            <ul class="flex-wrap">
+                <li>
+                    <ul class="fisrt-coloumn">
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/Background.png" alt="독서대" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">다링</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">
+                                        가을은 독서의 계절! 다이소 독서템으로 마 <br />
+                                        음의 양식 채우기
+                                    </p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">499명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/휴지.jpg" alt="휴지" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">뉴라네집</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">천원으로 만드는 귀여운 휴지케이스</p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">9,269명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="second-coloumn">
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/거울.jpg" alt="거울" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">소리홈</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">마그네틱 미러 만들기</p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">9,023명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/포스터.jpg" alt="포스터" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">아리랑홈</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">포스터, 벽에 붙이지마세요</p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">9,722명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="third-coloumn">
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/조명.jpg" alt="조명" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">이지지니</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">집 분위기 확 바꿔줄 다이소 조명 DIY</p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">8,097명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/도마.jpg" alt="도마" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">난나그린</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">다이소 접시꽂이와 도마로 완성하는 시스템 선반</p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">499명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="forth-coloumn">
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/Background.png" alt="독서대" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">다링</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">
+                                        가을은 독서의 계절! 다이소 독서템으로 마 <br />
+                                        음의 양식 채우기
+                                    </p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">499명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentList-editorPick-mc">
+                                <div class="ep-img">
+                                    <a href="#" class="ep-img__link">
+                                        <img src="./img/Background.png" alt="독서대" />
+                                    </a>
+                                </div>
+                                <div class="ep-detail">
+                                    <div class="fs-labels">
+                                        <a href="#" class="profile-link"
+                                            ><img src="./img/profile.png" alt="profile" class="profile-img"
+                                        /></a>
+                                        <a href="#"><span class="nick-name">다링</span></a>
+                                        <div class="heart-ct">
+                                            <img src="./img/heart.png" alt="하트" class="heart-img" />
+                                        </div>
+                                    </div>
+                                    <p class="txt1">
+                                        가을은 독서의 계절! 다이소 독서템으로 마 <br />
+                                        음의 양식 채우기
+                                    </p>
+                                    <div class="last-labels">
+                                        <span class="label-font bold">499명</span>
+                                        <span class="label-font">봤어요</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
