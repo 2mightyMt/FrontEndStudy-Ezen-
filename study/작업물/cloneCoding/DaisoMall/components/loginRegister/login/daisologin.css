@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #d22929; /* 다이소의 빨간색 */
+    --border-color: #e0e0e0;
+    --background-color: #f9f9f9;
+    --font-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login {
+    max-width: 408px;
+    margin: auto;
+}
+.title {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.logo {
+    background: url(https://cdn.daisomall.co.kr/apps/f/c7ed989e2/img/logo_daiso.9dda2d0.svg) no-repeat 50% / auto 100%;
+    height: 36px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.member-wrap {
+    margin: auto;
+    width: 408px;
+}
+.login input {
+    width: 408px;
+    height: 64px;
+    border-radius: 4px;
+    border: 1px solid lightslategray;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.login input:hover {
+    border: 1px solid #555;
+}
+.login input:focus {
+    border: 1px solid red;
+}
+
+.autologin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    align-items: center;
+    gap: 20px;
+}
+.input-comm {
+    display: flex;
+    gap: 5px;
+}
+
+.el-button {
+    display: block;
+    overflow: hidden;
+    align-items: center;
+    width: 408px;
+    height: 64px;
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    background: #d22929;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+.find-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.find-list li:not(:first-child)::before {
+    background-color: #c5c8ce;
+    content: '';
+    height: 16px;
+    position: absolute;
+    right: 108%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    z-index: 1;
+}
+
+.find-list a {
+    color: #646f7c;
+    text-decoration: none;
+}
+.find-list li {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+    position: relative;
+}
+
+.tit2 {
+    background-color: #fff;
+    color: #c5c8ce;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    width: 408px;
+}
+.tit2::after {
+    background-color: #e9ebee;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 0;
+}
+.tit3 {
+    display: inline-block;
+
+    margin-top: 75px;
+    background: white;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.tit2::after {
+    background-color: #e9ebee;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.kakao {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyBpZD0iaWNvX2tha2FvIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGlkPSJiZyIgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIiBmaWxsPSIjZmVlNTAwIi8+CiAgPGcgaWQ9Imtha2FvdGFsayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEgMTEpIj4KICAgIDxwYXRoIGlkPSLtjKjsiqRfMjQ3MiIgZGF0YS1uYW1lPSLtjKjsiqQgMjQ3MiIgZD0iTTc2LjAxLDc0LjNINzcuM2wtLjY0My0xLjgyOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02OC4xMDUgLTY0LjcxNSkiIGZpbGw9IiMxMTEiLz4KICAgIDxwYXRoIGlkPSLtlansuZjquLBfMiIgZGF0YS1uYW1lPSLtlansuZjquLAgMiIgZD0iTTE4ODQ2LjA3NiwxOTIzOC45NjNjLS4xMjEtLjA2Ni0uMS0uMjUtLjEtLjI1LjAzOS0uMjQ2Ljk0MS0zLjM1NSwxLjEwNS0zLjkyNi0zLjA1MS0xLjUxMi01LjA4LTQuMTkxLTUuMDgtNy4yNDIsMC00LjcxNyw0Ljg1NC04LjU0NywxMC44NC04LjU0N3MxMC44MzYsMy44MywxMC44MzYsOC41NDctNC44NTQsOC41NDctMTAuODM2LDguNTQ3YTE0LjI4OCwxNC4yODgsMCwwLDEtMS45MjItLjEzMWMtLjYyNy40MzQtNC4yNDQsMi45NzUtNC41ODYsMy4wMThhLjMyNC4zMjQsMCwwLDEtLjExMy4wMjFBLjI3OC4yNzgsMCwwLDEsMTg4NDYuMDc2LDE5MjM4Ljk2M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODg0NC4wMDIgLTE5MjE5Ljk5OCkiIGZpbGw9IiMxMTEiLz4KICA8L2c+Cjwvc3ZnPgo=);
+    background-size: cover;
+    height: 56px;
+    width: 56px;
+}
+.naver {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyBpZD0iaWNvX2tha2FvIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj4KICA8Y2lyY2xlIGlkPSJiZyIgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIiBmaWxsPSIjMDBjMzAwIi8+CiAgPHBhdGggaWQ9Iu2MqOyKpF8xNTAzOTczIiBkYXRhLW5hbWU9Iu2MqOyKpCAxNTAzOTczIiBkPSJNMzAuMTMzLDI3Ljk1NSwyNC4yLDE5LjM5MkgxOS4yODV2MTZoNS4xNTJWMjYuODI5bDUuOTMxLDguNTYzaDQuOTE3di0xNkgzMC4xMzNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNy4yODUgLTcuMzkzKSIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K);
+    background-size: cover;
+    height: 56px;
+    width: 56px;
+    gap: 15px;
+}
+.apple {
+    background-image: url(https://cdn.daisomall.co.kr/apps/f/c7ed989e2/img/sns_apple.1e18f70.svg);
+    background-size: cover;
+    height: 56px;
+    width: 56px;
+    margin-top: 100px;
+}
+.kakao,
+.naver,
+.apple {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 13px;
+}
+
+.easy-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.biz-area {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 15px;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: center;
+    font-weight: bold;
+    height: 30h;
+}

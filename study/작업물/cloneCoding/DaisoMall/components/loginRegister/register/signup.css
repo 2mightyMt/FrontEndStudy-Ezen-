@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #d22929; /* 다이소의 빨간색 */
+    --border-color: #e0e0e0;
+    --background-color: #f9f9f9;
+    --font-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.signup {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+}
+.id {
+    margin-top: 20px;
+}
+
+.form-signup > fieldset > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-signup fieldset {
+    border: none;
+    padding: 0;
+}
+.form-signup legend {
+    display: none;
+}
+.form-signup input[type='text'],
+.form-signup input[type='password'],
+.form-signup input[type='tel'] {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-signup .title {
+    display: block;
+    width: 30%;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.radio-area {
+    display: flex;
+    align-items: center;
+}
+.radio-area label {
+    margin-right: 20px;
+}
+
+.agree {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+}
+.all-agree {
+    list-style: none;
+    width: 70%;
+}
+.all-agree li {
+    margin-bottom: 10px;
+}
+.all-agree.ul.li input[type='checkbox'] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-agree p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+.btn-signup {
+    display: block;
+    overflow: hidden;
+    align-items: center;
+    width: 333px;
+    height: 44px;
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    background: #d22929;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.addr-area {
+    position: relative;
+    width: 390px;
+}
+.addr-area input {
+    width: 100%;
+}
+.address .inp-btn {
+    display: block;
+    width: 390px;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    height: 44px;
+    border-radius: 4px;
+    color: white;
+    background-color: #d22929;
+    border: 1px solid rgb(0, 0, 0);
+}

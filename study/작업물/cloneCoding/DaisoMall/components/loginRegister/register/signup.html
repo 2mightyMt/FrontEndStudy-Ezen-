@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>회원가입</title>
+        <link rel="stylesheet" href="./signup.css" />
+    </head>
+    <body>
+        <div id="wrap"></div>
+        <div class="signup">
+            <h1>회원가입</h1>
+            <form action="/action_page.php" class="form-signup">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <!-- 아이디 -->
+                    <div class="id">
+                        <label for="id" class="title">아이디</label>
+                        <input
+                            type="text"
+                            id="id"
+                            name="아이디"
+                            placeholder="아이디를 입력해주세요"
+                            maxlength="16"
+                            required
+                            autocomplete="on"
+                        />
+                    </div>
+                    <!-- 비밀 번호 -->
+                    <div class="password">
+                        <label for="비밀번호" class="title">비밀번호</label>
+                        <input type="password" id="pw" name="pw" placeholder="비밀번호를 입력해주세요" required />
+                    </div>
+                    <!-- 비밀번호 확인 -->
+                    <div class="pwcheck">
+                        <label for="비밀번호" class="title">비밀번호 확인</label>
+
+                        <input
+                            type="password"
+                            id="pw"
+                            name="pw"
+                            required
+                            placeholder="비밀번호를 한번더 입력해주세요"
+                        />
+                    </div>
+                    <!-- 이름 -->
+                    <div class="name">
+                        <label for="이름" class="title">이름</label>
+                        <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required />
+                    </div>
+
+                    <!-- 이메일 -->
+                    <div class="email">
+                        <label for="이메일" class="title">이메일</label>
+                        <input type="text" id="email" name="email" placeholder="예:daiso1@daiso.com" required />
+                    </div>
+
+                    <!-- 휴대폰 번호 -->
+                    <div class="mobile">
+                        <label for="휴대폰" class="title">휴대폰</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="숫자만 입력해주세요" required />
+                    </div>
+
+                    <div class="address">
+                        <label for="주소" class="title">주소</label>
+                        <button class="inp-btn">주소검색</button>
+                    </div>
+
+                    <!-- 성별 -->
+                    <div class="gender">
+                        <div class="title">성별</div>
+
+                        <div class="radio-area">
+                            <input type="radio" name="gender" id="m" />
+                            <label for="m">남자</label>
+                            <input type="radio" name="gender" id="w" />
+                            <label for="w">여자</label>
+                            <input type="radio" name="gender" id="n" />
+                            <label for="n">선택안함</label>
+                        </div>
+                    </div>
+
+                    <!-- 생년월일 -->
+                    <div class="birthdate">
+                        <label for="birthdate" class="title">생년월일</label>
+                        <input
+                            type="text"
+                            id="birthdate"
+                            name="birthdate"
+                            placeholder="YYYY DD MM"
+                            maxlength="8"
+                            required
+                        />
+                    </div>
+
+                    <!-- 친구 추천인 -->
+                    <div class="friend">
+                        <label for="추가입력" class="title">추가입력 사항</label>
+                        <input
+                            type="text"
+                            name="추천인"
+                            id="m"
+                            placeholder="친구초대 추천인 아이디"
+                            maxlength="16"
+                            required
+                            autocomplete="on"
+                        />
+                    </div>
+
+                    <!-- 이용약관 동의 -->
+                    <div class="agree">
+                        <label for="이용약관동의" class="title">이용약관동의</label>
+
+                        <ul class="all-agree">
+                            <li>
+                                <input type="checkbox" name="동의" id="all-agree" />
+                                <label for="all-agree" name="동의"> 전체 동의합니다. </label>
+                                <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="동의" id="agree-in" />
+                                <label for="agree-in" name="동의" required
+                                    ><span>이용약관 동의(필수)</span><a href="#">약관보기</a></label
+                                >
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="동의" id="persnal" />
+                                <label for="persnal" name="동의" required
+                                    ><span>개인정보 수집 이용동의(필수)</span><a href="#">약관보기</a></label
+                                >
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="동의" id="choose" />
+                                <label for="choose" name="동의"
+                                    ><span>개인정보 수집 이용동의(선택)</span><a href="#">약관보기</a></label
+                                >
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="동의" id="coupon" />
+                                <label for="coupon" name="동의"
+                                    ><span>무료배송, 할인쿠폰 등 혜택/정보 수신동의(선택)</span></label
+                                >
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="sms" id="sms" />
+                                <label for="sms"><span>SMS</span></label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="email" id="e-mail" />
+                                <label for="e-mail"><span>이메일</span></label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="동의" id="fourteen" />
+                                <label for="fourteen" name="동의" required
+                                    ><span>본인은 만 14세 이상입니다.(필수)</span></label
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn-signup" type="summit">가입하기</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
