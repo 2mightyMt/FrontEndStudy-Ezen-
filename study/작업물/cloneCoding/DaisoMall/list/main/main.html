@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <!-- main.css  -->
         <link rel="stylesheet" href="../main/main.css" />
+
         <!-- line awesome -->
         <link
             rel="stylesheet"
@@ -17,90 +18,479 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- main.js -->
         <script src="../main/main.js"></script>
+        <script src=""></script>
     </head>
     <body>
         <!-- 헤더 섹션 -->
-        <!-- gnb 섹션 -->
-        <!-- 메인 콘텐츠 -->
-        <!-- 메인 배너 스와이퍼 섹션 -->
-        <!-- 680 x 618 / 이미지는 680 x 508, 이미지 설명은 680 x 110  세로정렬 -->
-        <!-- Swiper Container -->
-        <div class="swiper-wrap">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/1.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/2.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/3.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/4.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/5.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/6.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/7.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/8.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/9.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/10.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/11.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/12.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/13.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/14.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/15.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/16.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/17.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/18.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/19.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/20.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/21.jpg" alt="자연과 함께 하는 감성 캠핑" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./resources/imgs/22.jpg" alt="자연과 함께 하는 감성 캠핑" />
+        <header id="header">
+            <div class="header-wrap">
+                <div class="header-top">
+                    <div class="grid">
+                        <h1 id="logo">
+                            <a href="#"><img src="../../resources/img/logo.svg" alt="다이소 로고" /></a>
+                        </h1>
+                        <div class="search">
+                            <div class="search-bar">
+                                <form action="#">
+                                    <fieldset>
+                                        <legend class="blind">검색</legend>
+                                        <input class="search-txt" type="search" title="검색어를 입력해 주세요." />
+                                        <button class="search-btn" type="submit"></button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="rank">
+                                <ul>
+                                    <li>
+                                        <span>1</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>2</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="util">
+                            <a href="#"><span class="blind">오늘의 발견</span></a>
+                            <div class="my-page">마이페이지</div>
+                            <div class="cart">장바구니</div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <nav id="gnb">
+                    <div class="grid">
+                        <div class="menu">
+                            <button class="menu-btn"><span class="blind">메뉴</span></button>
+                            <div class="goto">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span class="blind">패션신상템</span></a>
+                                    </li>
+                                    <li><a href="#">홈</a></li>
+                                    <li><a href="#">신상</a></li>
+                                    <li><a href="#">랭킹</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">뷰티</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">매장위치/상품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-all">
+                <div class="menu-grid">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#">뷰티/위생</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스킨케어</a>
+                                        <li><a href="#">기초스킨케어</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                        <li><a href="#">팩/마스크</a></li>
+                                        <li><a href="#">자외선차단제</a></li>
+                                        <li><a href="#">클렌징/필링</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">건강/위생용품</a>
+                                        <li><a href="#">일회용패치</a></li>
+                                        <li><a href="#">기타건강/위생용품</a></li>
+                                        <li><a href="#">렌즈관리용품</a></li>
+                                        <li><a href="#">수면안대</a></li>
+                                        <li><a href="#">생리대</a></li>
+                                        <li><a href="#">손소독제</a></li>
+                                        <li><a href="#">항균필름</a></li>
+                                        <li><a href="#">안마기</a></li>
+                                        <li><a href="#">효자손</a></li>
+                                        <li><a href="#">냉온찜질팩</a></li>
+                                        <li><a href="#">핫팩</a></li>
+                                        <li><a href="#">보호대</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">메이크업</a>
+                                        <li><a href="#">베이스메이크업</a></li>
+                                        <li><a href="#">아이메이크업</a></li>
+                                        <li><a href="#">립메이크업</a></li>
+                                        <li><a href="#">메이크업브러시</a></li>
+                                        <li><a href="#">메이크업퍼프</a></li>
+                                        <li><a href="#">치크/하이라이터</a></li>
+                                        <li><a href="#">메이크업소품</a></li>
+                                        <li><a href="#">퍼프브러시세척</a></li>
+                                        <li><a href="#">향수</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네일용품</a>
+                                        <li><a href="#">네일리무버</a></li>
+                                        <li><a href="#">네일아트도구</a></li>
+                                        <li><a href="#">네일패치/팁</a></li>
+                                        <li><a href="#">매니큐어</a></li>
+                                        <li><a href="#">네일케어용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">가정의료용품</a>
+                                        <li><a href="#">구급함</a></li>
+                                        <li><a href="#">상비약품</a></li>
+                                        <li><a href="#">약통</a></li>
+                                        <li><a href="#">의료용테스트기</a></li>
+                                        <li><a href="#">반창고/밴드</a></li>
+                                        <li><a href="#">일회용패치</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">미용소품</a>
+                                        <li><a href="#">미용가위</a></li>
+                                        <li><a href="#">거울</a></li>
+                                        <li><a href="#">미용소도구</a></li>
+                                        <li><a href="#">화장소품수납</a></li>
+                                        <li><a href="#">공병</a></li>
+                                        <li><a href="#">세안소품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">칫솔/치약/구강용품</a>
+                                        <li><a href="#">칫솔</a></li>
+                                        <li><a href="#">치실</a></li>
+                                        <li><a href="#">치간칫솔</a></li>
+                                        <li><a href="#">치약</a></li>
+                                        <li><a href="#">구강청결제</a></li>
+                                        <li><a href="#">기타구강용품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">맨케어</a>
+                                        <li><a href="#">남성스킨케어</a></li>
+                                        <li><a href="#">남성용면도기</a></li>
+                                        <li><a href="#">남성향수</a></li>
+                                        <li><a href="#">남성메이크업</a></li>
+                                        <li><a href="#">클렌징/쉐이빙</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">마스크</a>
+                                        <li><a href="#">일회용마스크</a></li>
+                                        <li><a href="#">다회용마스크</a></li>
+                                        <li><a href="#">기타마스크용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">화장지/물티슈</a>
+                                        <li><a href="#">화장지</a></li>
+                                        <li><a href="#">갑티슈</a></li>
+                                        <li><a href="#">여행용티슈</a></li>
+                                        <li><a href="#">물티슈</a></li>
+                                        <li><a href="#">티슈케이스</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">헤어/바디</a>
+                                        <li><a href="#">염색/펌</a></li>
+                                        <li><a href="#">빗/브러쉬</a></li>
+                                        <li><a href="#">가발</a></li>
+                                        <li><a href="#">헤어스타일링</a></li>
+                                        <li><a href="#">트리트먼트/케어</a></li>
+                                        <li><a href="#">헤어롤</a></li>
+                                        <li><a href="#">샴푸</a></li>
+                                        <li><a href="#">린스</a></li>
+                                        <li><a href="#">바디보습</a></li>
+                                        <li><a href="#">바디워시</a></li>
+                                        <li><a href="#">입욕제</a></li>
+                                        <li><a href="#">풋케어</a></li>
+                                        <li><a href="#">핸드워시</a></li>
+                                        <li><a href="#">데오케어</a></li>
+                                        <li><a href="#">제모기</a></li>
+                                        <li><a href="#">비누</a></li>
+                                        <li><a href="#">핸드크림</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">수납/정리</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">수납정리함</a>
+                                        <li><a href="#">기타수납정리</a></li>
+                                        <li><a href="#">리빙박스/다용도정리함</a></li>
+                                        <li><a href="#">속옷정리함</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">부직포정리함</a></li>
+                                        <li><a href="#">벽걸이수납</a></li>
+                                        <li><a href="#">수납바구니</a></li>
+                                        <li><a href="#">칸막이수납함</a></li>
+                                        <li><a href="#">피규어장식장</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">바구니류</a>
+                                        <li><a href="#">플라스틱바구니</a></li>
+                                        <li><a href="#">세탁바구니</a></li>
+                                        <li><a href="#">바구니</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보관커버</a>
+                                        <li><a href="#">선풍기/에어컨</a></li>
+                                        <li><a href="#">압축팩</a></li>
+                                        <li><a href="#">의류커버</a></li>
+                                        <li><a href="#">행거커버</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">사무수납</a>
+                                        <li><a href="#">독서대</a></li>
+                                        <li><a href="#">꽂이/정리함</a></li>
+                                        <li><a href="#">사무수납함</a></li>
+                                        <li><a href="#">책꽂이/북엔드</a></li>
+                                        <li><a href="#">사무서랍장</a></li>
+                                        <li><a href="#">서류정리함</a></li>
+                                        <li><a href="#">카드스탠드</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">행거/후크</a>
+                                        <li><a href="#">걸이식행거</a></li>
+                                        <li><a href="#">부착식행거</a></li>
+                                        <li><a href="#">흡착식행거</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네트망</a>
+                                        <li><a href="#">네트망</a></li>
+                                        <li><a href="#">네트망소품</a></li>
+                                        <li><a href="#">네트바구니</a></li>
+                                        <li><a href="#">타공판/걸이</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">옷걸이</a>
+                                        <li><a href="#">목제옷걸이</a></li>
+                                        <li><a href="#">바지걸이</a></li>
+                                        <li><a href="#">기타옷걸이</a></li>
+                                        <li><a href="#">스틸옷걸이</a></li>
+                                        <li><a href="#">플라스틱옷걸이</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">문구/팬시</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">다이어리/노트/메모</a>
+                                        <li><a href="#">가계부</a></li>
+                                        <li><a href="#">노트/연습장</a></li>
+                                        <li><a href="#">다이어리</a></li>
+                                        <li><a href="#">단어암기장</a></li>
+                                        <li><a href="#">점착메모지/메모지/인덱스</a></li>
+                                        <li><a href="#">수첩</a></li>
+                                        <li><a href="#">플래너/스케쥴러</a></li>
+                                        <li><a href="#">달력</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스티커류</a>
+                                        <li><a href="#">데코스티커</a></li>
+                                        <li><a href="#">마스킹테이프</a></li>
+                                        <li><a href="#">아동스티커</a></li>
+                                        <li><a href="#">라벨/견출지</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">미술용품</a>
+                                        <li><a href="#">미술DIY</a></li>
+                                        <li><a href="#">물감</a></li>
+                                        <li><a href="#">기타미술도구</a></li>
+                                        <li><a href="#">미술붓</a></li>
+                                        <li><a href="#">미술연필</a></li>
+                                        <li><a href="#">사인펜/마카</a></li>
+                                        <li><a href="#">색연필/크레파스</a></li>
+                                        <li><a href="#">색종이</a></li>
+                                        <li><a href="#">스케치북/도화지</a></li>
+                                        <li><a href="#">팔레트</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">문구/사무용품</a>
+                                        <li><a href="#">파일/바인더</a></li>
+                                        <li><a href="#">클립보드</a></li>
+                                        <li><a href="#">계산기</a></li>
+                                        <li><a href="#">데스크매트</a></li>
+                                        <li><a href="#">문구가위</a></li>
+                                        <li><a href="#">문구자</a></li>
+                                        <li><a href="#">문구칼</a></li>
+                                        <li><a href="#">풀/접착제</a></li>
+                                        <li><a href="#">기타 사무/문구</a></li>
+                                        <li><a href="#">용지/코팅</a></li>
+                                        <li><a href="#">자석/핀</a></li>
+                                        <li><a href="#">스탬프</a></li>
+                                        <li><a href="#">스테이플러/펀치</a></li>
+                                        <li><a href="#">표지판/안내판</a></li>
+                                        <li><a href="#">장부/장부속지</a></li>
+                                        <li><a href="#">클립/홀더</a></li>
+                                        <li><a href="#">데스크정리소품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">필기용품</a>
+                                        <li><a href="#">네임펜/매직</a></li>
+                                        <li><a href="#">만년필</a></li>
+                                        <li><a href="#">볼펜/젤펜</a></li>
+                                        <li><a href="#">수성펜</a></li>
+                                        <li><a href="#">붓펜</a></li>
+                                        <li><a href="#">샤프심</a></li>
+                                        <li><a href="#">샤프</a></li>
+                                        <li><a href="#">수정테이프</a></li>
+                                        <li><a href="#">수정펜</a></li>
+                                        <li><a href="#">연필</a></li>
+                                        <li><a href="#">연필깎이</a></li>
+                                        <li><a href="#">지우개</a></li>
+                                        <li><a href="#">필통</a></li>
+                                        <li><a href="#">형광펜</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">편지/봉투</a>
+                                        <li><a href="#">편지지/봉투</a></li>
+                                        <li><a href="#">카드/엽서/연하장</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">테이프</a>
+                                        <li><a href="#">사무/문구용테이프</a></li>
+                                        <li><a href="#">테이프커터</a></li>
+                                        <li><a href="#">양면테이프</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보드/칠판</a>
+                                        <li><a href="#">보드지우개</a></li>
+                                        <li><a href="#">보드</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">파티/이벤트용품</a>
+                                        <li><a href="#">폭죽</a></li>
+                                        <li><a href="#">풍선</a></li>
+                                        <li><a href="#">의상/분장용품</a></li>
+                                        <li><a href="#">마술용품</a></li>
+                                        <li><a href="#">기타파티/이벤트용품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">포장용품</a>
+                                        <li><a href="#">완충제</a></li>
+                                        <li><a href="#">포장지</a></li>
+                                        <li><a href="#">포장봉투</a></li>
+                                        <li><a href="#">택배봉투</a></li>
+                                        <li><a href="#">포장상자/케이스</a></li>
+                                        <li><a href="#">포장끈/리본</a></li>
+                                        <li><a href="#">포장데코</a></li>
+                                        <li><a href="#">쇼핑백</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 메인 콘텐츠 -->
+        <div class="mainArea">
+            <div class="main-wrap">
+                <div class="main-banner-area"></div>
+                <div class="main-button-menu"></div>
+                <div class="slide-banner"></div>
+                <div class="product-today"></div>
+                <div class="product-new"></div>
+                <div class="product-customerbest"></div>
+                <div class="slide-banner"></div>
+                <div class="neck-warmer"></div>
+                <div class="camping"></div>
+                <div class="slide-banner"></div>
+                <div class="fw-fashion"></div>
+                <div class="kimchi-initial"></div>
+                <div class="slide-banner"></div>
+                <div class="kimchi-pickup"></div>
+                <div class="welcome-fall"></div>
+                <div class="weekly"></div>
+                <div class="slide-banner"></div>
+                <div class="magnet"></div>
+                <div class="closet1"></div>
+                <div class="closet2"></div>
+                <div class="slide-banner"></div>
+                <div class="curtain"></div>
+                <div class="japanese"></div>
+                <div class="hanger"></div>
+                <div class="slide-banner"></div>
+                <div class="phone-cable"></div>
+                <div class="ironing"></div>
+                <div class="snacks"></div>
+                <div class="slide-banner"></div>
+                <div class="coca"></div>
+                <div class="pickup"></div>
+                <div class="glass"></div>
+                <div class="content-editorPick"></div>
             </div>
         </div>
+        <!-- 680 x 618 / 이미지는 680 x 508, 이미지 설명은 680 x 110  세로정렬 -->
+        <!-- Swiper Container -->
+
         <!-- 메뉴 -->
         <!-- 푸터 섹션 -->
     </body>
+    <script src="/study/작업물/cloneCoding/DaisoMall/components/header/header.js"></script>
 </html>
