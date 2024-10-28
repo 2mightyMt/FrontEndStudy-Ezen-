@@ -85,7 +85,7 @@
                   <li>
                     <a href="#"><span class="blind">패션신상템</span></a>
                   </li>
-                  <li><a href="#">홈</a></li>
+                  <li class="active"><a href="#">홈</a></li>
                   <li><a href="#">신상</a></li>
                   <li><a href="#">랭킹</a></li>
                   <li><a href="#">기획전</a></li>
@@ -435,33 +435,48 @@
     </header>
 
     <script>
+      // .goto의 li 클릭 시 a태그의 class 제거/활성화
+      const gotoLis = document.querySelectorAll('.goto li');
+      gotoLis.forEach((gotoLi) => {
+        gotoLi.addEventListener('click', function () {
+          gotoLis.forEach((li) => {
+            li.classList.remove('active');
+          });
+          this.classList.add('active');
+        });
+      });
+
+      // menu-btn에 hover시 .menu-all 보이기
       const menuBtn = document.querySelector('.menu-btn');
       const menuAll = document.querySelector('.menu-all');
-      const depth2First = document.querySelector('.depth1 > li .depth2');
+      const depth2First = document.querySelector('.depth1 >  .depth2');
       const titles = document.querySelectorAll('.depth1 li > a');
+      const depth2 = document.querySelectorAll('.depth2');
 
       menuBtn.addEventListener('mouseenter', function () {
         menuAll.style.display = 'block';
         depth2First.style.display = 'flex';
-        menuAll.addEventListener('mouseenter', function () {
-          menuAll.style.display = 'block';
-          titles.forEach((title, index) => {
-            title.addEventListener('mouseenter', function () {
-              if (index === 0) {
-                depth2First.style.display = 'flex';
-              } else {
-                depth2First.style.display = 'none';
-              }
-            });
-          });
-        });
-        menuAll.addEventListener('mouseleave', function () {
-          menuAll.style.display = 'none';
-        });
       });
 
       menuBtn.addEventListener('mouseleave', function () {
         menuAll.style.display = 'none';
+      });
+
+      menuAll.addEventListener('mouseenter', function () {
+        menuAll.style.display = 'block';
+      });
+      menuAll.addEventListener('mouseleave', function () {
+        menuAll.style.display = 'none';
+      });
+
+      titles.forEach((title, index) => {
+        title.addEventListener('mouseenter', function () {
+          if (index === 0) {
+            depth2First.style.display = 'flex';
+          } else {
+            depth2First.style.display = 'none';
+          }
+        });
       });
     </script>
   </body>
