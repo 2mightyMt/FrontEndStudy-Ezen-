@@ -1,0 +1,12 @@
+<svg id="ico_shorts" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_476789" data-name="사각형 476789" width="14" height="14" fill="#000"/>
+    </clipPath>
+  </defs>
+  <rect id="사각형_464848" data-name="사각형 464848" width="16" height="16" fill="none"/>
+  <g id="마스크_그룹_671735" data-name="마스크 그룹 671735" transform="translate(1 1)" clip-path="url(#clip-path)">
+    <path id="패스_1555037" data-name="패스 1555037" d="M12.5.5H1.5a1,1,0,0,0-1,1v11a1,1,0,0,0,1,1h11a1,1,0,0,0,1-1V1.5A1,1,0,0,0,12.5.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="패스_1555038" data-name="패스 1555038" d="M5.23,9.23V4.91a.41.41,0,0,1,.62-.35l3.7,2.15a.41.41,0,0,1,0,.71L5.85,9.58a.41.41,0,0,1-.62-.35Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
