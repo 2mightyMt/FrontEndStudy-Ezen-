@@ -4,13 +4,75 @@
 .mainArea {
     margin: 0;
 }
-/* 메인 배너 */
-.main-banner-area {
-    height: fit-content;
-}
+
 /* 배너 아래 영역들 */
 .main-wrap {
     margin: 0 312.5px;
     height: fit-content;
-    background-color: red;
+}
+/* Swiper 전체 컨테이너 크기 설정 */
+.swiper-container {
+    width: 680px;
+    height: 618px;
+    position: relative;
+    margin: 0 auto; /* 슬라이더 중앙 정렬 */
+}
+
+/* 슬라이드 크기 및 간격 설정 */
+.swiper-slide {
+    width: 680px;
+    height: 618px;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 680px;
+    height: 508px;
+    object-fit: cover;
+    margin-bottom: 110px;
+}
+.slide-text {
+    width: 680px;
+    height: 100px;
+    background-color: aqua;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* 네비게이션 버튼 스타일 */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 40%; /* 수직 중앙 */
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 이전 버튼: 슬라이드 왼쪽 */
+.swiper-button-prev {
+}
+
+/* 다음 버튼: 슬라이드 오른쪽 */
+.swiper-button-next {
+    right: 0px;
+}
+
+/* 버튼 비활성화 시 스타일 */
+.swiper-button-prev.disabled,
+.swiper-button-next.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
