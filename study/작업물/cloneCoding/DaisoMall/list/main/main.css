@@ -3,12 +3,7 @@
 
 .mainArea {
     margin: 0;
-}
-
-/* 배너 아래 영역들 */
-.main-wrap {
-    margin: 0 312.5px;
-    height: fit-content;
+    height: auto;
 }
 /* Swiper 전체 컨테이너 크기 설정 */
 .swiper-container {
@@ -30,12 +25,21 @@
     width: 680px;
     height: 508px;
     object-fit: cover;
-    margin-bottom: 110px;
 }
 .slide-text {
     width: 680px;
     height: 100px;
-    background-color: aqua;
+    padding: 22px 0;
+}
+.slide-tit {
+    font-size: 24px;
+    color: #28323c;
+    font-weight: 700;
+}
+.slide-subtit {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #646f7c;
 }
 .swiper-wrapper {
     display: flex;
@@ -75,4 +79,24 @@
 .swiper-button-next.disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* 배너 아래 영역들 */
+.main-wrap {
+    margin: 100px 312.5px 0 312.5px;
+    height: auto;
+}
+.main-button-menu {
+    height: auto;
+}
+.main-button-menu ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 50px;
+}
+.main-button-menu li {
+    margin-right: 20px;
+}
+.slide-banner {
+    margin: 90px 0;
 }
