@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
         loop: false, // loop 비활성화 (마지막에서 첫 번째로, 또는 그 반대로 순환하지 않음)
+        spaceBetween: 28,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
