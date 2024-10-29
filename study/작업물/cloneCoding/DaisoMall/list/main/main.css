@@ -1,0 +1,16 @@
+@import url(/study/작업물/cloneCoding/DaisoMall/components/header/header.css);
+@import url(/study/작업물/cloneCoding/DaisoMall/components/footer/footer.css);
+
+.mainArea {
+    margin: 0;
+}
+/* 메인 배너 */
+.main-banner-area {
+    height: fit-content;
+}
+/* 배너 아래 영역들 */
+.main-wrap {
+    margin: 0 312.5px;
+    height: fit-content;
+    background-color: red;
+}

@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--black);
+}
+
+/* -gpt */
+
+footer {
+    width: 100%;
+    height: 650px;
+    background-color: #161d24;
+    padding: 40px 0;
+    color: #fff;
+    position: relative;
+}
+
+.footer-container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    position: relative;
+    width: 1280px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-bottom-1 h3 {
+    position: absolute;
+    color: #fff;
+    display: flex;
+    top: 20px;
+    left: 0;
+}
+
+.footer-bottom-2 {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+/* cs 부분 */
+.cs {
+    margin: 20px 100px 0 0;
+}
+
+.cs > h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cs-1 span,
+.cs-2 span,
+span a {
+    font-size: 14px;
+    color: #c5c8ce !important;
+    margin: 0px 5px 10px 0;
+}
+
+.cs-1-1,
+.cs-2-1 {
+    margin-left: 108px;
+    margin-top: 17px;
+    text-decoration: underline;
+}
+
+.cs-1-1-1 {
+    margin-bottom: 15px;
+}
+
+.cs-1 > .time,
+.cs-2 > .time {
+    margin-left: 108px;
+}
+
+.cs-2 {
+    margin-top: 30px;
+}
+
+.cs-1 > h3,
+.cs-2 > h3 {
+    font-size: 14px;
+    display: inline-block;
+    width: 105px;
+}
+
+.cs-1 > .tel,
+.cs-2 > .tel {
+    font-size: 22px;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* 멤버십 부분 */
+
+/* 멤버십과 회사소개 섹션 간격 추가 */
+.membership,
+.introduction {
+    margin: 20px 50px 0 0;
+}
+
+.membership h3,
+.introduction h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.membership ul li a,
+.introduction ul li a {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 소셜 아이콘을 상단 오른쪽에 고정 */
+.social-icons {
+    position: absolute; /* 상단 고정을 위해 absolute 사용 */
+    top: 0px; /* 상단에서 20px 떨어진 위치 */
+    right: 0px; /* 오른쪽에서 20px 떨어진 위치 */
+    display: flex;
+    gap: 24px; /* 아이콘 간격 */
+}
+
+.social-icons a i {
+    color: #fff;
+    font-size: 24px; /* 아이콘 크기 */
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.store-buttons {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-buttons img {
+    width: 120px;
+    margin-bottom: 12px;
+}
+
+/* 개인정보처리방침등 aside */
+
+.aside {
+    text-align: right; /* 텍스트 및 내부 요소를 오른쪽으로 정렬 */
+    width: 100%; /* 부모의 가로 크기만큼 확장 */
+    margin-bottom: 15px;
+}
+
+.aside a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.aside a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.aside_wrap {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Certified */
+.Certified {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 250px;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.Certified li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #646f7c;
+    font-size: 14px;
+}
+
+.Certified img {
+    width: 32px;
+    margin-right: 5px;
+}
+
+/* address */
+.address {
+    margin: 50px 0 0 250px;
+}
+
+.address-1,
+.address-2 {
+    margin-bottom: 5px;
+}
+
+.address span {
+    font-size: 14px;
+    color: #646f7c;
+    margin-bottom: 10px;
+}
+
+.address a {
+    text-decoration: underline;
+}
+
+/* copyright */
+.copyright {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 14px;
+    color: #646f7c;
+}
+
+/* 패밀리 사이트 */
+
+.family-site {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+}
