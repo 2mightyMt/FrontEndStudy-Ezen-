@@ -1,3 +1,5 @@
+@import url(/study/작업물/cloneCoding/DaisoMall/components/header/header.css);
+@import url(/study/작업물/cloneCoding/DaisoMall/components/footer/footer.css);
 * {
     font-family: Pretendard;
     font-weight: 400px;
@@ -6,6 +8,30 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.title-area {
+    .title-h2 {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -3px;
+        line-height: 1;
+        margin: 24px 0 30px 150px;
+        text-align: left;
+        color: #161d24;
+    }
+    .total {
+        color: #28323c;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 187px;
+        margin-bottom: 24px;
+        .num {
+            color: #d70011;
+            font-weight: 700;
+        }
+    }
+}
+
 #container2 {
     ul {
         display: flex;
@@ -58,14 +84,12 @@
     .label {
         background: #d70011;
         border-radius: 4px;
+        width: 55px;
         text-align: center;
-        padding: 2px 6px;
-        width: 60px;
     }
     .label span {
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.4px;
+        font-size: 13px;
+        line-height: 5px;
         color: #fff;
     }
     .img-cont {
