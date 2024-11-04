@@ -24,11 +24,15 @@ body,
   list-style: none;
   text-decoration: none;
   font-style: normal;
-  color: var(--title-color);
 }
 
 body {
   min-width: 1280px;
+}
+
+body,
+body a {
+  color: var(--title-color);
 }
 
 .blind {
