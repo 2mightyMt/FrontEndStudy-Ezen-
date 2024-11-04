@@ -19,7 +19,7 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-size: 16px;
   list-style: none;
   text-decoration: none;
@@ -175,7 +175,7 @@ body a {
   height: 64px;
   color: var(--white);
   font-size: 14px;
-  letter-spacing: -1.8px;
+  /* letter-spacing: -1.8px; */
 }
 
 .my-page::before,
