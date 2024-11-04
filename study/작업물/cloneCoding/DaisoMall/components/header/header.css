@@ -6,8 +6,9 @@
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -18,7 +19,7 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-size: 16px;
   list-style: none;
   text-decoration: none;
@@ -102,7 +103,8 @@ body {
   height: 42px;
   border: none;
   border-radius: 42px;
-  background: var(--primary-color) url(../../resources/img/search-btn.svg) no-repeat center;
+  background: var(--primary-color) url(../../resources/img/search-btn.svg)
+    no-repeat center;
 }
 
 .rank {
@@ -131,7 +133,7 @@ body {
 
 .rank::after {
   display: block;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   background-image: url(../../resources/img/arrow.svg);
@@ -152,7 +154,7 @@ body {
 
 .util a::before {
   display: block;
-  content: '';
+  content: "";
   width: 184px;
   height: 100%;
   background: url(../../resources/img/util-today.png) center no-repeat;
@@ -165,17 +167,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 62px;
+  width: 70px;
   height: 64px;
   color: var(--white);
   font-size: 14px;
-  margin: 0 4px;
+  letter-spacing: -1.8px;
 }
 
 .my-page::before,
 .cart::before {
   display: block;
-  content: '';
+  content: "";
   width: 48px;
   height: 48px;
 }
@@ -221,7 +223,7 @@ body {
   bottom: 2px;
   left: 0;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background-color: var(--primary-color);
@@ -229,7 +231,7 @@ body {
 
 .goto li:first-child a::after {
   display: block;
-  content: '';
+  content: "";
   width: 72px;
   height: 47px;
   background: url(../../resources/img/fashionNew.svg) no-repeat center/contain;
@@ -249,7 +251,7 @@ body {
 
 .member li::before {
   display: block;
-  content: '';
+  content: "";
   width: 1px;
   height: 14px;
   background-color: #e9ebee;
@@ -279,10 +281,11 @@ body {
 
 .menu-btn::after {
   display: block;
-  content: '';
+  content: "";
   width: 32px;
   height: 47px;
-  background: var(--white) url(../../resources/img/menu.svg) no-repeat left center;
+  background: var(--white) url(../../resources/img/menu.svg) no-repeat left
+    center;
   cursor: pointer;
 }
 
@@ -327,7 +330,7 @@ body {
 
 .depth1 > li > a::before {
   display: block;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   margin-right: 12px;
@@ -336,7 +339,7 @@ body {
 
 .depth1 > li:nth-child(2) > a::before {
   display: block;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   margin-right: 12px;
@@ -345,7 +348,7 @@ body {
 
 .depth1 > li:nth-child(3) > a::before {
   display: block;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   margin-right: 12px;
@@ -357,10 +360,11 @@ body {
   top: auto;
   right: 10px;
   display: block;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
-  background: url(../../resources/img/right-arrow-red.svg) no-repeat center/cover;
+  background: url(../../resources/img/right-arrow-red.svg) no-repeat
+    center/cover;
 }
 
 .depth2 {
