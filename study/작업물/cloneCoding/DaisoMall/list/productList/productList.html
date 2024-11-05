@@ -1,566 +1,1561 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>productList | DaisoMall</title>
-        <link rel="stylesheet" href="./productlist.css" />
-        <link
-            rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-        />
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>product | html</title>
+            <!-- swiper css -->
+            <!-- main.css  -->
+            <link rel="stylesheet" href="../productList/productList.css" />
+            <!-- line awesome -->
+            <link
+                rel="stylesheet"
+                href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+            />
+            <!-- swiper js -->
+            <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <!-- main.js -->
+            <script src="../productList/productList.js"></script>
     </head>
     <body>
-        <ul>
-            <div id="containers">
-                    <li>
-                    <div id="container1">
-                        <div class="product1-1">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="header-wrap">
+                <div class="header-top">
+                    <div class="grid">
+                        <h1 id="logo">
+                            <a href="#"><img src="../../resources/img/logo.svg" alt="다이소 로고" /></a>
+                        </h1>
+                        <div class="search">
+                            <div class="search-bar">
+                                <form action="#">
+                                    <fieldset>
+                                        <legend class="blind">검색</legend>
+                                        <input class="search-txt" type="search" title="검색어를 입력해 주세요." />
+                                        <button class="search-btn" type="submit"></button>
+                                    </fieldset>
+                                </form>
                             </div>
-            </li>
-                       <li>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                       </li>
-                   <li>
-                        <div class="product1-2">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                    <li>
-                        <div class="product1-3">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
+                            <div class="rank">
+                                <ul>
+                                    <li>
+                                        <span>1</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>2</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="product1-4">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
+                        <div class="util">
+                            <a href="#"><span class="blind">오늘의 발견</span></a>
+                            <div class="my-page">마이페이지</div>
+                            <div class="cart">장바구니</div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="product1-5">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
                     </div>
-        </ul>
-           <ul>
-               <div id="container2">
+                </div>
+                <nav id="gnb">
+                    <div class="grid">
+                        <div class="menu">
+                            <button class="menu-btn"><span class="blind">메뉴</span></button>
+                            <div class="goto">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span class="blind">패션신상템</span></a>
+                                    </li>
+                                    <li><a href="#">홈</a></li>
+                                    <li><a href="#">신상</a></li>
+                                    <li><a href="#">랭킹</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">뷰티</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">매장위치/상품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-all">
+                <div class="menu-grid">
+                    <ul class="depth1">
                         <li>
-                        <div class="product2-1">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                            <a href="#">뷰티/위생</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스킨케어</a>
+                                        <li><a href="#">기초스킨케어</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                        <li><a href="#">팩/마스크</a></li>
+                                        <li><a href="#">자외선차단제</a></li>
+                                        <li><a href="#">클렌징/필링</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">건강/위생용품</a>
+                                        <li><a href="#">일회용패치</a></li>
+                                        <li><a href="#">기타건강/위생용품</a></li>
+                                        <li><a href="#">렌즈관리용품</a></li>
+                                        <li><a href="#">수면안대</a></li>
+                                        <li><a href="#">생리대</a></li>
+                                        <li><a href="#">손소독제</a></li>
+                                        <li><a href="#">항균필름</a></li>
+                                        <li><a href="#">안마기</a></li>
+                                        <li><a href="#">효자손</a></li>
+                                        <li><a href="#">냉온찜질팩</a></li>
+                                        <li><a href="#">핫팩</a></li>
+                                        <li><a href="#">보호대</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                </li>
-                   <li>
-                        <div class="product2-2">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">메이크업</a>
+                                        <li><a href="#">베이스메이크업</a></li>
+                                        <li><a href="#">아이메이크업</a></li>
+                                        <li><a href="#">립메이크업</a></li>
+                                        <li><a href="#">메이크업브러시</a></li>
+                                        <li><a href="#">메이크업퍼프</a></li>
+                                        <li><a href="#">치크/하이라이터</a></li>
+                                        <li><a href="#">메이크업소품</a></li>
+                                        <li><a href="#">퍼프브러시세척</a></li>
+                                        <li><a href="#">향수</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                   <li>
-                        <div class="product2-3">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네일용품</a>
+                                        <li><a href="#">네일리무버</a></li>
+                                        <li><a href="#">네일아트도구</a></li>
+                                        <li><a href="#">네일패치/팁</a></li>
+                                        <li><a href="#">매니큐어</a></li>
+                                        <li><a href="#">네일케어용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">가정의료용품</a>
+                                        <li><a href="#">구급함</a></li>
+                                        <li><a href="#">상비약품</a></li>
+                                        <li><a href="#">약통</a></li>
+                                        <li><a href="#">의료용테스트기</a></li>
+                                        <li><a href="#">반창고/밴드</a></li>
+                                        <li><a href="#">일회용패치</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                    <li>
-                        <div class="product2-4">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">미용소품</a>
+                                        <li><a href="#">미용가위</a></li>
+                                        <li><a href="#">거울</a></li>
+                                        <li><a href="#">미용소도구</a></li>
+                                        <li><a href="#">화장소품수납</a></li>
+                                        <li><a href="#">공병</a></li>
+                                        <li><a href="#">세안소품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">칫솔/치약/구강용품</a>
+                                        <li><a href="#">칫솔</a></li>
+                                        <li><a href="#">치실</a></li>
+                                        <li><a href="#">치간칫솔</a></li>
+                                        <li><a href="#">치약</a></li>
+                                        <li><a href="#">구강청결제</a></li>
+                                        <li><a href="#">기타구강용품</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                   <li>
-                        <div class="product2-5">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">맨케어</a>
+                                        <li><a href="#">남성스킨케어</a></li>
+                                        <li><a href="#">남성용면도기</a></li>
+                                        <li><a href="#">남성향수</a></li>
+                                        <li><a href="#">남성메이크업</a></li>
+                                        <li><a href="#">클렌징/쉐이빙</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">마스크</a>
+                                        <li><a href="#">일회용마스크</a></li>
+                                        <li><a href="#">다회용마스크</a></li>
+                                        <li><a href="#">기타마스크용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">화장지/물티슈</a>
+                                        <li><a href="#">화장지</a></li>
+                                        <li><a href="#">갑티슈</a></li>
+                                        <li><a href="#">여행용티슈</a></li>
+                                        <li><a href="#">물티슈</a></li>
+                                        <li><a href="#">티슈케이스</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">헤어/바디</a>
+                                        <li><a href="#">염색/펌</a></li>
+                                        <li><a href="#">빗/브러쉬</a></li>
+                                        <li><a href="#">가발</a></li>
+                                        <li><a href="#">헤어스타일링</a></li>
+                                        <li><a href="#">트리트먼트/케어</a></li>
+                                        <li><a href="#">헤어롤</a></li>
+                                        <li><a href="#">샴푸</a></li>
+                                        <li><a href="#">린스</a></li>
+                                        <li><a href="#">바디보습</a></li>
+                                        <li><a href="#">바디워시</a></li>
+                                        <li><a href="#">입욕제</a></li>
+                                        <li><a href="#">풋케어</a></li>
+                                        <li><a href="#">핸드워시</a></li>
+                                        <li><a href="#">데오케어</a></li>
+                                        <li><a href="#">제모기</a></li>
+                                        <li><a href="#">비누</a></li>
+                                        <li><a href="#">핸드크림</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    </div>
-           </ul>
-            <ul>
-                <div id="container3">
+                        </li>
                         <li>
-                        <div class="product3-1">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                            <a href="#">수납/정리</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">수납정리함</a>
+                                        <li><a href="#">기타수납정리</a></li>
+                                        <li><a href="#">리빙박스/다용도정리함</a></li>
+                                        <li><a href="#">속옷정리함</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">부직포정리함</a></li>
+                                        <li><a href="#">벽걸이수납</a></li>
+                                        <li><a href="#">수납바구니</a></li>
+                                        <li><a href="#">칸막이수납함</a></li>
+                                        <li><a href="#">피규어장식장</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-               </li>
-                   <li>
-                        <div class="product3-2">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">바구니류</a>
+                                        <li><a href="#">플라스틱바구니</a></li>
+                                        <li><a href="#">세탁바구니</a></li>
+                                        <li><a href="#">바구니</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보관커버</a>
+                                        <li><a href="#">선풍기/에어컨</a></li>
+                                        <li><a href="#">압축팩</a></li>
+                                        <li><a href="#">의류커버</a></li>
+                                        <li><a href="#">행거커버</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                   <li>
-                        <div class="product3-3">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">사무수납</a>
+                                        <li><a href="#">독서대</a></li>
+                                        <li><a href="#">꽂이/정리함</a></li>
+                                        <li><a href="#">사무수납함</a></li>
+                                        <li><a href="#">책꽂이/북엔드</a></li>
+                                        <li><a href="#">사무서랍장</a></li>
+                                        <li><a href="#">서류정리함</a></li>
+                                        <li><a href="#">카드스탠드</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                    <li>
-                        <div class="product3-4">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">행거/후크</a>
+                                        <li><a href="#">걸이식행거</a></li>
+                                        <li><a href="#">부착식행거</a></li>
+                                        <li><a href="#">흡착식행거</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                   <li>
-                        <div class="product3-5">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네트망</a>
+                                        <li><a href="#">네트망</a></li>
+                                        <li><a href="#">네트망소품</a></li>
+                                        <li><a href="#">네트바구니</a></li>
+                                        <li><a href="#">타공판/걸이</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    </div>
-            </ul>
-            <ul>
-                <div id="container4">
-                    <li>
-                        <div class="product4-1">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">옷걸이</a>
+                                        <li><a href="#">목제옷걸이</a></li>
+                                        <li><a href="#">바지걸이</a></li>
+                                        <li><a href="#">기타옷걸이</a></li>
+                                        <li><a href="#">스틸옷걸이</a></li>
+                                        <li><a href="#">플라스틱옷걸이</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product4-2">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                        </li>
+                        <li>
+                            <a href="#">문구/팬시</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">다이어리/노트/메모</a>
+                                        <li><a href="#">가계부</a></li>
+                                        <li><a href="#">노트/연습장</a></li>
+                                        <li><a href="#">다이어리</a></li>
+                                        <li><a href="#">단어암기장</a></li>
+                                        <li><a href="#">점착메모지/메모지/인덱스</a></li>
+                                        <li><a href="#">수첩</a></li>
+                                        <li><a href="#">플래너/스케쥴러</a></li>
+                                        <li><a href="#">달력</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product4-3">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스티커류</a>
+                                        <li><a href="#">데코스티커</a></li>
+                                        <li><a href="#">마스킹테이프</a></li>
+                                        <li><a href="#">아동스티커</a></li>
+                                        <li><a href="#">라벨/견출지</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">미술용품</a>
+                                        <li><a href="#">미술DIY</a></li>
+                                        <li><a href="#">물감</a></li>
+                                        <li><a href="#">기타미술도구</a></li>
+                                        <li><a href="#">미술붓</a></li>
+                                        <li><a href="#">미술연필</a></li>
+                                        <li><a href="#">사인펜/마카</a></li>
+                                        <li><a href="#">색연필/크레파스</a></li>
+                                        <li><a href="#">색종이</a></li>
+                                        <li><a href="#">스케치북/도화지</a></li>
+                                        <li><a href="#">팔레트</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product4-4">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">문구/사무용품</a>
+                                        <li><a href="#">파일/바인더</a></li>
+                                        <li><a href="#">클립보드</a></li>
+                                        <li><a href="#">계산기</a></li>
+                                        <li><a href="#">데스크매트</a></li>
+                                        <li><a href="#">문구가위</a></li>
+                                        <li><a href="#">문구자</a></li>
+                                        <li><a href="#">문구칼</a></li>
+                                        <li><a href="#">풀/접착제</a></li>
+                                        <li><a href="#">기타 사무/문구</a></li>
+                                        <li><a href="#">용지/코팅</a></li>
+                                        <li><a href="#">자석/핀</a></li>
+                                        <li><a href="#">스탬프</a></li>
+                                        <li><a href="#">스테이플러/펀치</a></li>
+                                        <li><a href="#">표지판/안내판</a></li>
+                                        <li><a href="#">장부/장부속지</a></li>
+                                        <li><a href="#">클립/홀더</a></li>
+                                        <li><a href="#">데스크정리소품</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                   <li>
-                        <div class="product4-5">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">필기용품</a>
+                                        <li><a href="#">네임펜/매직</a></li>
+                                        <li><a href="#">만년필</a></li>
+                                        <li><a href="#">볼펜/젤펜</a></li>
+                                        <li><a href="#">수성펜</a></li>
+                                        <li><a href="#">붓펜</a></li>
+                                        <li><a href="#">샤프심</a></li>
+                                        <li><a href="#">샤프</a></li>
+                                        <li><a href="#">수정테이프</a></li>
+                                        <li><a href="#">수정펜</a></li>
+                                        <li><a href="#">연필</a></li>
+                                        <li><a href="#">연필깎이</a></li>
+                                        <li><a href="#">지우개</a></li>
+                                        <li><a href="#">필통</a></li>
+                                        <li><a href="#">형광펜</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    </div>
-            </ul>
-           <ul>
-                <div id="container5">
-                    <li>
-                        <div class="product5-1">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">편지/봉투</a>
+                                        <li><a href="#">편지지/봉투</a></li>
+                                        <li><a href="#">카드/엽서/연하장</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">테이프</a>
+                                        <li><a href="#">사무/문구용테이프</a></li>
+                                        <li><a href="#">테이프커터</a></li>
+                                        <li><a href="#">양면테이프</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보드/칠판</a>
+                                        <li><a href="#">보드지우개</a></li>
+                                        <li><a href="#">보드</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">파티/이벤트용품</a>
+                                        <li><a href="#">폭죽</a></li>
+                                        <li><a href="#">풍선</a></li>
+                                        <li><a href="#">의상/분장용품</a></li>
+                                        <li><a href="#">마술용품</a></li>
+                                        <li><a href="#">기타파티/이벤트용품</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                   <li>
-                        <div class="product5-2">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">포장용품</a>
+                                        <li><a href="#">완충제</a></li>
+                                        <li><a href="#">포장지</a></li>
+                                        <li><a href="#">포장봉투</a></li>
+                                        <li><a href="#">택배봉투</a></li>
+                                        <li><a href="#">포장상자/케이스</a></li>
+                                        <li><a href="#">포장끈/리본</a></li>
+                                        <li><a href="#">포장데코</a></li>
+                                        <li><a href="#">쇼핑백</a></li>
+                                    </ul>
                                 </div>
-                                <div class="label"><span>택배전용</span></div>
                             </div>
-                        </div>
-                   </li>
-                   <li>
-                        <div class="product5-3">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                   </li>
-                    <li>
-                        <div class="product5-4">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                    </li>
-                <li>
-                        <div class="product5-5">
-                            <div class="img-cont">
-                                <img
-                                    class="img"
-                                    src="/study/작업물/cloneCoding/DaisoMall/list/contentList/img/bookstand.png"
-                                    alt="VT 리들샷"
-                                />
-                            </div>
-                            <div class="detail-cont">
-                                <div class="price">3000<span>원</span></div>
-                                <div class="detail">
-                                    <span>BEST</span>
-                                    VT 리들샷 100 페이셜
-                                    <br />
-                                    부스팅 퍼스트 앰플 2ml*6개입
-                                </div>
-                                <div class="label"><span>택배전용</span></div>
-                            </div>
-                        </div>
-                </li>
+                        </li>
+                    </ul>
                 </div>
             </div>
-           </ul>
+        </header>
+        <!-- 메인 -->
+       <div class="contents-wrap">
+       <div class="title-area">
+            <h2 class="title-h2">
+              오늘 추천 상품
+            </h2>
+           <div class="total">
+                총 <em class="num">200</em>개
+              </div>
+       </div>
+        
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                                <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                                <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                           <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                           </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                          <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                          </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                          <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                          </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="container2">
+                <ul>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product2-1">
+                            <a href="#" class="productclick">
+                                <div class="img-cont">
+                                    <img class="img" src="./img/product.png" alt="VT 리들샷" />
+                                </div>
+                                <div class="detail-cont">
+                                    <div class="price">3000<span>원</span></div>
+                                    <div class="detail">
+                                        <span>BEST</span>
+                                        VT 리들샷 100 페이셜
+                                        부스팅 퍼스트 앰플 2ml*6개입
+                                    </div>
+                                    <div class="label"><span>택배전용</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+       </div>
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer-container">
+                <!-- 고객센터 섹션 -->
+                <div class="footer-section cs">
+                    <h3>고객센터</h3>
+                    <div class="cs-1">
+                        <h3>온라인 다이소몰</h3>
+                        <span class="tel">1599-2211</span>
+                        <br />
+                        <span class="time">평일 09:00 - 18:00</span>
+                        <div class="cs-1-1">
+                            <div class="cs-1-1-1">
+                                <span><a href="#">주문조회</a></span>
+                                <span><a href="#">취소/교환/반품 신청</a></span>
+                            </div>
+
+                            <span><a href="#">1:1문의</a></span>
+                            <span><a href="#">공지사항</a></span>
+                            <span><a href="#">제휴문의</a></span>
+                            <span><a href="#">고객센터</a></span>
+                        </div>
+                    </div>
+                    <div class="cs-2">
+                        <h3>다이소 매장</h3>
+                        <span class="tel">1522-4400</span>
+                        <br />
+                        <span class="time">평일 09:00 - 18:00</span>
+                        <div class="cs-2-1">
+                            <span><a href="#">매장위치/재고</a></span>
+                            <span><a href="#">1:1문의</a></span>
+                            <span><a href="#">고객센터</a></span>
+                            <span><a href="#">제휴문의</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 멤버십 섹션 -->
+                <div class="footer-section membership">
+                    <h3>멤버십</h3>
+                    <ul>
+                        <li><a href="#">멤버십 소개</a></li>
+                        <li><a href="#">포인트 적립/사용내역</a></li>
+                        <li><a href="#">포인트 선물하기</a></li>
+                        <li><a href="#">멤버십 패밀리</a></li>
+                    </ul>
+                </div>
+
+                <!-- 회사소개 섹션 -->
+                <div class="footer-section introduction">
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="#">기업 소개</a></li>
+                        <li><a href="#">국민가게, 다이소</a></li>
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">납품문의</a></li>
+                        <li><a href="#">인테리어 업체 제휴문의</a></li>
+                        <li><a href="#">가맹문의</a></li>
+                    </ul>
+                </div>
+
+                <!-- 소셜 아이콘 섹션 -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-line"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <!-- 앱 스토어 버튼 -->
+                <div class="store-buttons">
+                    <a href="#"
+                        ><img
+                            src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/googleplay.png"
+                            alt="Google Play"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/appstore.png"
+                            alt="App Store"
+                    /></a>
+                    <a href="#"
+                        ><img
+                            src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/inquiry.svg"
+                            alt="inquiry"
+                    /></a>
+                </div>
+                <div class="aside_wrap">
+                    <address class="copyright">Copyright (c) 2023 DAISO. All Rights Reserved.</address>
+                    <!-- 서비스 이용약관 및 개인정보 처리방침 링크 추가 -->
+                    <div class="aside">
+                        <a href="#">서비스 이용약관</a>
+                        <a href="#">개인정보 처리방침</a>
+                        <a href="#">청소년 보호정책</a>
+                        <a href="#">위치기반서비스 이용약관</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 하단부 섹션 -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-1">
+                    <h3>(주)아성다이소</h3>
+                    <div class="footer-bottom-1-1">
+                        <ul class="Certified">
+                            <li>
+                                <img
+                                    src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_1.svg"
+                                    alt="소비자중심경영 인증"
+                                />소비자중심경영 인증
+                            </li>
+                            <li>
+                                <img
+                                    src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_2.svg"
+                                    alt="품질경영시스템 인증"
+                                />품질경영시스템 인증
+                            </li>
+                            <li>
+                                <img
+                                    src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_3.png"
+                                    alt="위해상품 차단시스템 운영매장"
+                                />위해상품 차단시스템 운영매장
+                            </li>
+                        </ul>
+                        <div class="address">
+                            <div class="address-1">
+                                <span>대표 : 김기호 |</span>
+                                <span>사업자등록번호 : 213-81-52063 |</span>
+                                <span><a href="#">사업자정보 확인</a></span>
+                            </div>
+                            <div class="address-2">
+                                <span>통신판매신고번호 : 2008-서울강남-1525 |</span>
+                                <span>주소 : 서울특별시 강남구 남부순환로 2748 아성(ASUNG) |</span>
+                                <span>개인정보 및 청소년 보호 책임자 : 조태진</span>
+                            </div>
+                            <span
+                                >다이소몰은 현금 결제 금액에 대한 안전거래를 보장하기 위하여 우리은행과 채무지급보증서
+                                계약을 체결하였습니다. |</span
+                            >
+                            <span><a href="#">서비스 가입 확인</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-2">
+                    <select class="family-site">
+                        <option value="0" disabled selected>패밀리사이트</option>
+                        <option value="1">아성</option>
+                        <option value="2">아성 HMP</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
+<!-- 로드맵 
+    첫번째 : main.html, main.css 보고 참고해서 헤더 푸터 넣기 
+    두번째 : contentList를 참고하여 어떤식으로 구성해야 할지 생각하기
+    세번째 : 위를 바탕으로 구조 잡아보가
+    네번째 : 구조 잡은거에 세부 요소 넣어보기
+    -->
