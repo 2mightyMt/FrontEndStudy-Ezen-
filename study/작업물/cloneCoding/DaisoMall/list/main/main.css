@@ -1,5 +1,14 @@
 @import url(/study/작업물/cloneCoding/DaisoMall/components/header/header.css);
 @import url(/study/작업물/cloneCoding/DaisoMall/components/footer/footer.css);
+
+* {
+    font-family: Pretendard;
+    font-weight: 400px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 .mainArea {
     margin: 0;
     height: auto;
@@ -82,11 +91,14 @@
 
 /* 배너 아래 영역들 */
 .main-wrap {
+    width: auto;
     margin: 100px 312.5px 0 312.5px;
     height: auto;
 }
 .main-button-menu {
     height: auto;
+    margin: auto;
+    width: fit-content;
 }
 .main-button-menu ul {
     list-style: none;
@@ -97,5 +109,7 @@
     margin-right: 20px;
 }
 .slide-banner {
-    margin: 90px 0;
+    margin: 90px auto;
+    width: fit-content;
+    height: auto;
 }
