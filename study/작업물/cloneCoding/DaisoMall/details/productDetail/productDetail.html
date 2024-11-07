@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- 상품 상세페이지 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAISO - product</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../../resources/css/output/style.css">
+    <!-- <link rel="stylesheet" href="../resources/css/output/style.css"> -->
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../..//resources/js/ui-swiper.js"></script>
+    <script defer src="../../resources/js/main.js"></script>
+
+
+</head>
+
+<body>
+    <!-- 24.10.18 이미지 스와이어 만들어보기 -->
+    <!-- 변수명은 그대로 사용 / 추가적인 변수는 자유지만 [부모클래스명__변수명] 규칙지키기 -->
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="header-wrap">
+                <div class="header-top">
+                    <div class="grid">
+                        <h1 id="logo">
+                            <a href="#"><img src="../../resources/img/logo.svg" alt="다이소 로고" /></a>
+                        </h1>
+                        <div class="search">
+                            <div class="search-bar">
+                                <form action="#">
+                                    <fieldset>
+                                        <legend class="blind">검색</legend>
+                                        <input class="search-txt" type="search" title="검색어를 입력해 주세요." />
+                                        <button class="search-btn" type="submit"></button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="rank">
+                                <ul>
+                                    <li>
+                                        <span>1</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>2</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>4</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>5</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>6</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>7</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>8</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>9</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <a href="#">캠핑</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="util">
+                            <a href="#"><span class="blind">오늘의 발견</span></a>
+                            <div class="my-page">마이페이지</div>
+                            <div class="cart">장바구니</div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="gnb">
+                    <div class="grid">
+                        <div class="menu">
+                            <button class="menu-btn"><span class="blind">메뉴</span></button>
+                            <div class="goto">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span class="blind">패션신상템</span></a>
+                                    </li>
+                                    <li><a href="#">홈</a></li>
+                                    <li><a href="#">신상</a></li>
+                                    <li><a href="#">랭킹</a></li>
+                                    <li><a href="#">기획전</a></li>
+                                    <li><a href="#">뷰티</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <ul>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">멤버십</a></li>
+                                <li><a href="#">매장위치/상품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu-all">
+                <div class="menu-grid">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#">뷰티/위생</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스킨케어</a>
+                                        <li><a href="#">기초스킨케어</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                        <li><a href="#">팩/마스크</a></li>
+                                        <li><a href="#">자외선차단제</a></li>
+                                        <li><a href="#">클렌징/필링</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">건강/위생용품</a>
+                                        <li><a href="#">일회용패치</a></li>
+                                        <li><a href="#">기타건강/위생용품</a></li>
+                                        <li><a href="#">렌즈관리용품</a></li>
+                                        <li><a href="#">수면안대</a></li>
+                                        <li><a href="#">생리대</a></li>
+                                        <li><a href="#">손소독제</a></li>
+                                        <li><a href="#">항균필름</a></li>
+                                        <li><a href="#">안마기</a></li>
+                                        <li><a href="#">효자손</a></li>
+                                        <li><a href="#">냉온찜질팩</a></li>
+                                        <li><a href="#">핫팩</a></li>
+                                        <li><a href="#">보호대</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">메이크업</a>
+                                        <li><a href="#">베이스메이크업</a></li>
+                                        <li><a href="#">아이메이크업</a></li>
+                                        <li><a href="#">립메이크업</a></li>
+                                        <li><a href="#">메이크업브러시</a></li>
+                                        <li><a href="#">메이크업퍼프</a></li>
+                                        <li><a href="#">치크/하이라이터</a></li>
+                                        <li><a href="#">메이크업소품</a></li>
+                                        <li><a href="#">퍼프브러시세척</a></li>
+                                        <li><a href="#">향수</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네일용품</a>
+                                        <li><a href="#">네일리무버</a></li>
+                                        <li><a href="#">네일아트도구</a></li>
+                                        <li><a href="#">네일패치/팁</a></li>
+                                        <li><a href="#">매니큐어</a></li>
+                                        <li><a href="#">네일케어용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">가정의료용품</a>
+                                        <li><a href="#">구급함</a></li>
+                                        <li><a href="#">상비약품</a></li>
+                                        <li><a href="#">약통</a></li>
+                                        <li><a href="#">의료용테스트기</a></li>
+                                        <li><a href="#">반창고/밴드</a></li>
+                                        <li><a href="#">일회용패치</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">미용소품</a>
+                                        <li><a href="#">미용가위</a></li>
+                                        <li><a href="#">거울</a></li>
+                                        <li><a href="#">미용소도구</a></li>
+                                        <li><a href="#">화장소품수납</a></li>
+                                        <li><a href="#">공병</a></li>
+                                        <li><a href="#">세안소품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">칫솔/치약/구강용품</a>
+                                        <li><a href="#">칫솔</a></li>
+                                        <li><a href="#">치실</a></li>
+                                        <li><a href="#">치간칫솔</a></li>
+                                        <li><a href="#">치약</a></li>
+                                        <li><a href="#">구강청결제</a></li>
+                                        <li><a href="#">기타구강용품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">맨케어</a>
+                                        <li><a href="#">남성스킨케어</a></li>
+                                        <li><a href="#">남성용면도기</a></li>
+                                        <li><a href="#">남성향수</a></li>
+                                        <li><a href="#">남성메이크업</a></li>
+                                        <li><a href="#">클렌징/쉐이빙</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">마스크</a>
+                                        <li><a href="#">일회용마스크</a></li>
+                                        <li><a href="#">다회용마스크</a></li>
+                                        <li><a href="#">기타마스크용품</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">화장지/물티슈</a>
+                                        <li><a href="#">화장지</a></li>
+                                        <li><a href="#">갑티슈</a></li>
+                                        <li><a href="#">여행용티슈</a></li>
+                                        <li><a href="#">물티슈</a></li>
+                                        <li><a href="#">티슈케이스</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">헤어/바디</a>
+                                        <li><a href="#">염색/펌</a></li>
+                                        <li><a href="#">빗/브러쉬</a></li>
+                                        <li><a href="#">가발</a></li>
+                                        <li><a href="#">헤어스타일링</a></li>
+                                        <li><a href="#">트리트먼트/케어</a></li>
+                                        <li><a href="#">헤어롤</a></li>
+                                        <li><a href="#">샴푸</a></li>
+                                        <li><a href="#">린스</a></li>
+                                        <li><a href="#">바디보습</a></li>
+                                        <li><a href="#">바디워시</a></li>
+                                        <li><a href="#">입욕제</a></li>
+                                        <li><a href="#">풋케어</a></li>
+                                        <li><a href="#">핸드워시</a></li>
+                                        <li><a href="#">데오케어</a></li>
+                                        <li><a href="#">제모기</a></li>
+                                        <li><a href="#">비누</a></li>
+                                        <li><a href="#">핸드크림</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">수납/정리</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">수납정리함</a>
+                                        <li><a href="#">기타수납정리</a></li>
+                                        <li><a href="#">리빙박스/다용도정리함</a></li>
+                                        <li><a href="#">속옷정리함</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">부직포정리함</a></li>
+                                        <li><a href="#">벽걸이수납</a></li>
+                                        <li><a href="#">수납바구니</a></li>
+                                        <li><a href="#">칸막이수납함</a></li>
+                                        <li><a href="#">피규어장식장</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">바구니류</a>
+                                        <li><a href="#">플라스틱바구니</a></li>
+                                        <li><a href="#">세탁바구니</a></li>
+                                        <li><a href="#">바구니</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보관커버</a>
+                                        <li><a href="#">선풍기/에어컨</a></li>
+                                        <li><a href="#">압축팩</a></li>
+                                        <li><a href="#">의류커버</a></li>
+                                        <li><a href="#">행거커버</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">사무수납</a>
+                                        <li><a href="#">독서대</a></li>
+                                        <li><a href="#">꽂이/정리함</a></li>
+                                        <li><a href="#">사무수납함</a></li>
+                                        <li><a href="#">책꽂이/북엔드</a></li>
+                                        <li><a href="#">사무서랍장</a></li>
+                                        <li><a href="#">서류정리함</a></li>
+                                        <li><a href="#">카드스탠드</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">행거/후크</a>
+                                        <li><a href="#">걸이식행거</a></li>
+                                        <li><a href="#">부착식행거</a></li>
+                                        <li><a href="#">흡착식행거</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">네트망</a>
+                                        <li><a href="#">네트망</a></li>
+                                        <li><a href="#">네트망소품</a></li>
+                                        <li><a href="#">네트바구니</a></li>
+                                        <li><a href="#">타공판/걸이</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">옷걸이</a>
+                                        <li><a href="#">목제옷걸이</a></li>
+                                        <li><a href="#">바지걸이</a></li>
+                                        <li><a href="#">기타옷걸이</a></li>
+                                        <li><a href="#">스틸옷걸이</a></li>
+                                        <li><a href="#">플라스틱옷걸이</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">문구/팬시</a>
+                            <div class="depth2">
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">다이어리/노트/메모</a>
+                                        <li><a href="#">가계부</a></li>
+                                        <li><a href="#">노트/연습장</a></li>
+                                        <li><a href="#">다이어리</a></li>
+                                        <li><a href="#">단어암기장</a></li>
+                                        <li><a href="#">점착메모지/메모지/인덱스</a></li>
+                                        <li><a href="#">수첩</a></li>
+                                        <li><a href="#">플래너/스케쥴러</a></li>
+                                        <li><a href="#">달력</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">스티커류</a>
+                                        <li><a href="#">데코스티커</a></li>
+                                        <li><a href="#">마스킹테이프</a></li>
+                                        <li><a href="#">아동스티커</a></li>
+                                        <li><a href="#">라벨/견출지</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">미술용품</a>
+                                        <li><a href="#">미술DIY</a></li>
+                                        <li><a href="#">물감</a></li>
+                                        <li><a href="#">기타미술도구</a></li>
+                                        <li><a href="#">미술붓</a></li>
+                                        <li><a href="#">미술연필</a></li>
+                                        <li><a href="#">사인펜/마카</a></li>
+                                        <li><a href="#">색연필/크레파스</a></li>
+                                        <li><a href="#">색종이</a></li>
+                                        <li><a href="#">스케치북/도화지</a></li>
+                                        <li><a href="#">팔레트</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">문구/사무용품</a>
+                                        <li><a href="#">파일/바인더</a></li>
+                                        <li><a href="#">클립보드</a></li>
+                                        <li><a href="#">계산기</a></li>
+                                        <li><a href="#">데스크매트</a></li>
+                                        <li><a href="#">문구가위</a></li>
+                                        <li><a href="#">문구자</a></li>
+                                        <li><a href="#">문구칼</a></li>
+                                        <li><a href="#">풀/접착제</a></li>
+                                        <li><a href="#">기타 사무/문구</a></li>
+                                        <li><a href="#">용지/코팅</a></li>
+                                        <li><a href="#">자석/핀</a></li>
+                                        <li><a href="#">스탬프</a></li>
+                                        <li><a href="#">스테이플러/펀치</a></li>
+                                        <li><a href="#">표지판/안내판</a></li>
+                                        <li><a href="#">장부/장부속지</a></li>
+                                        <li><a href="#">클립/홀더</a></li>
+                                        <li><a href="#">데스크정리소품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">필기용품</a>
+                                        <li><a href="#">네임펜/매직</a></li>
+                                        <li><a href="#">만년필</a></li>
+                                        <li><a href="#">볼펜/젤펜</a></li>
+                                        <li><a href="#">수성펜</a></li>
+                                        <li><a href="#">붓펜</a></li>
+                                        <li><a href="#">샤프심</a></li>
+                                        <li><a href="#">샤프</a></li>
+                                        <li><a href="#">수정테이프</a></li>
+                                        <li><a href="#">수정펜</a></li>
+                                        <li><a href="#">연필</a></li>
+                                        <li><a href="#">연필깎이</a></li>
+                                        <li><a href="#">지우개</a></li>
+                                        <li><a href="#">필통</a></li>
+                                        <li><a href="#">형광펜</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">편지/봉투</a>
+                                        <li><a href="#">편지지/봉투</a></li>
+                                        <li><a href="#">카드/엽서/연하장</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">테이프</a>
+                                        <li><a href="#">사무/문구용테이프</a></li>
+                                        <li><a href="#">테이프커터</a></li>
+                                        <li><a href="#">양면테이프</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">보드/칠판</a>
+                                        <li><a href="#">보드지우개</a></li>
+                                        <li><a href="#">보드</a></li>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">파티/이벤트용품</a>
+                                        <li><a href="#">폭죽</a></li>
+                                        <li><a href="#">풍선</a></li>
+                                        <li><a href="#">의상/분장용품</a></li>
+                                        <li><a href="#">마술용품</a></li>
+                                        <li><a href="#">기타파티/이벤트용품</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <a href="#">포장용품</a>
+                                        <li><a href="#">완충제</a></li>
+                                        <li><a href="#">포장지</a></li>
+                                        <li><a href="#">포장봉투</a></li>
+                                        <li><a href="#">택배봉투</a></li>
+                                        <li><a href="#">포장상자/케이스</a></li>
+                                        <li><a href="#">포장끈/리본</a></li>
+                                        <li><a href="#">포장데코</a></li>
+                                        <li><a href="#">쇼핑백</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="inner">
+            <div class="content-section">
+                <div class="crumbs">
+                    <div class="el-breadcrumb">
+                        <a href="#">홈</a>
+                        <a href="#">패션잡화</a>
+                        <a href="#">우천용품</a>
+                        <a href="#">접이식우산</a>
+                    </div>
+                </div>
+                <div class="page-tit-area">
+                    <!-- 왼쪽 영역 -->
+                    <div class="goods-thumb-wrap">
+                        <!-- Swiper -->
+                        <div class="goods-thumb-swiper">
+                            <div class="swiper mySwiper2 swiper__main">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/X6HfMTujh7a6KdCKFCXS1036271_00_00X6HfMTujh7a6KdCKFCXS.jpg/dims/resize/600/quality/95"
+                                            alt="product1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/t0Zk91AjVgklVeJjwpkp1036271_00_01t0Zk91AjVgklVeJjwpkp.jpg/dims/resize/600/quality/95"
+                                            alt="product2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/Cbn1aNIxhJRn6aWUDh7h1036271_00_02Cbn1aNIxhJRn6aWUDh7h.jpg/dims/resize/600/quality/95"
+                                            alt="product3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination swiper-pagination__custom"></div>
+                        </div>
+                        <!-- container -->
+                        <div class="goods-thumb-container">
+                            <div class="swiper mySwiper swiper__container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/X6HfMTujh7a6KdCKFCXS1036271_00_00X6HfMTujh7a6KdCKFCXS.jpg/dims/resize/600/quality/95"
+                                            alt="product1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/t0Zk91AjVgklVeJjwpkp1036271_00_01t0Zk91AjVgklVeJjwpkp.jpg/dims/resize/600/quality/95"
+                                            alt="product2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://cdn.daisomall.co.kr/file/PD/20231129/Cbn1aNIxhJRn6aWUDh7h1036271_00_02Cbn1aNIxhJRn6aWUDh7h.jpg/dims/resize/600/quality/95"
+                                            alt="product3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <!--오른쪽 영역 -->
+                    <div class="goods-detail">
+                        <div class="goods-price">
+                            <div class="goods-price__wrap">
+                                <strong class="goods-price__value">5,000</strong>
+                                <span class="goods-price__won">원</span>
+                            </div>
+                            <button class="share_btn">
+                                <p>공유하기</p>
+                            </button>
+                        </div>
+                        <div class="goods-tit">컬러 완전자동 3단 우산(그린,네이비)</div>
+                        <div class="guide-benefit">
+                            <!-- 혜택안내 -->
+                            <div class="guide__tit">혜택안내</div>
+                            <div class="el-collapse">
+                                <!-- 혜택 1 -->
+                                <div class="el-collapse-item-1">
+                                    <div class="el-collapse-item__header-1">
+                                        <div class="el-collapse-item__wrap-1">
+                                            <div class="item-tit">
+                                                <span class="ico-wrap-1">
+                                                    <img src="https://cdn.daisomall.co.kr/apps/f/a1bae8769/img/ico_benefit_point.e3621e6.svg"
+                                                        alt="포인트 혜택" />
+                                                </span>
+                                                <p class="acco-tit-1">구매 시, <em>0.1% 다이소 포인트</em> 적립</p>
+                                            </div>
+                                            <button class="el-collapse-item__arrow-1">
+                                                <p>드롭다운버튼</p>
+                                            </button>
+                                        </div>
+                                        <div class="el-collapse-item__wrap-con-1">
+                                            <div class="el-collapse-item__content">
+                                                <div class="acco-cont">
+                                                    <ul class="txt-list">
+                                                        <li>상품 구매 금액에 대해 0.1%를 다이소 포인트로 적립해드려요.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 혜택 2 -->
+                                <div class="el-collapse-item-2">
+                                    <div class="el-collapse-item__header-2">
+                                        <div class="el-collapse-item__wrap-2">
+                                            <span class="ico-wrap-2">
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyBpZD0i6re466O5XzY2NjY0NyIgZGF0YS1uYW1lPSLqt7jro7kgNjY2NjQ3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTEyMCAtODcyKSI+CiAgICA8cmVjdCBpZD0i7IKs6rCB7ZiVXzQ2NDgxNyIgZGF0YS1uYW1lPSLsgqzqsIHtmJUgNDY0ODE3IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMjAgODcyKSIgZmlsbD0iI2ZmZiIvPgogICAgPGcgaWQ9IuyCrOqwge2YlV80NjU3MzQiIGRhdGEtbmFtZT0i7IKs6rCB7ZiVIDQ2NTczNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyMi41IDg3Ni43NSkiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIxIj4KICAgICAgPHJlY3Qgd2lkdGg9IjE1IiBoZWlnaHQ9IjExLjI1IiByeD0iMiIgc3Ryb2tlPSJub25lIi8+CiAgICAgIDxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTQiIGhlaWdodD0iMTAuMjUiIHJ4PSIxLjUiIGZpbGw9Im5vbmUiLz4KICAgIDwvZz4KICAgIDxsaW5lIGlkPSLshKBfNjA2IiBkYXRhLW5hbWU9IuyEoCA2MDYiIHgyPSIxMy43NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEyMy4xMjUgODc5Ljg3NSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                                    alt="카드 혜택" />
+                                            </span>
+                                            <p class="acco-tit-2">다이소몰 결제혜택 안내</p>
+                                            <div class="el-collapse-item__arrow-2">
+                                                <p>드롭다운버튼</p>
+                                            </div>
+                                        </div>
+                                        <div class="el-collapse-item__wrap-con-2">
+                                            <div class="acco-cont">
+                                                <ul class="list-ty-bullet">
+                                                    <li>
+                                                        카카오페이 혜택 안내
+                                                        <ul class="inner-list">
+                                                            <li>- 카카오페이머니로 3만원 이상 결제 시 카카오페이포인트 1,500원 적립</li>
+                                                            <li>- 1일 1회, 기간 내 2회 참여가능</li>
+                                                            <li>※ 자세한 사항은 <a class="link-btn" href="#">카카오페이 이벤트 ☜
+                                                                    클릭!</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="list-ty-bullet">
+                                                    <li>
+                                                        다이소 삼성카드 혜택 안내
+                                                        <ul class="inner-list">
+                                                            <li>- 이용금액의 1% 결제일 할인</li>
+                                                            <li>- 전월실적 조건 및 할인한도 제한없음</li>
+                                                            <li>※ 자세한 사항은 <a class="link-btn" href="#">다이소 삼성카드 ☜클릭!</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 배송방법 -->
+                        <div class="guide-deliver">
+                            <div class="guide__tit"><strong>배송방법</strong></div>
+                            <div class="el-radio-group">
+                                <div class="el-radio-group__1 el-radio">
+                                    <label role="radio" class="el-radio-button">
+                                        <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                            value="01" />
+                                        <div class="tit-h6">
+                                            <strong>택배배송</strong>
+                                            <span>10/19(토)</span>
+                                            <span>도착예정</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <button class="el-radio-group__2 el-radio" id="el-radio-group__2">
+                                    <label role="radio" class="el-radio-button">
+                                        <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                            value="02" />
+                                        <div class="tit-h6">
+                                            <strong>매장픽업</strong>
+                                            <span>내일 13시부터</span>
+                                            <span>픽업가능</span>
+                                        </div>
+                                    </label>
+                                </button>
+                                <div class="el-radio-group__3 el-radio">
+                                    <label role="radio" class="el-radio-button">
+                                        <input type="radio" class="el-radio-button__orig-radio" name="el-radio-group"
+                                            value="03" />
+                                        <div class="tit-h6">
+                                            <strong>대량주문</strong>
+                                            <span>7일 이내</span>
+                                            <span>도착예정</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- 배송방법 버튼 모달창 -->
+                            <button class="el-button__pickup">
+                                <span>구매 가능 픽업매장 찾기</span>
+                            </button>
+                        </div>
+                        <!-- 배송방법 밑 안내글 -->
+                        <!-- 아이콘 before로 넣어야함 -->
+                        <div class="delivery-set">
+                            <ul class="addr-cont">
+                                <li class="info-item-1">
+                                    <div class="info-item__login">
+                                        <p><a href="#">로그인</a> 후 정확한 배송 정보를 확인해 보세요</p>
+                                    </div>
+                                </li>
+                                <li class="info-item-2">
+                                    <div class="info-item__large">
+                                        <p>지금 결제하면</p>
+                                    </div>
+                                </li>
+                                <li class="info-item-3">
+                                    <div class="info-item__large">
+                                        <div class="info-item__large__tit">배송비</div>
+                                        <div class="info-item__large__con">
+                                            <p>3,000원 (한진택배)</p>
+                                            <p>30,000원 이상 구매 시 무료</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="banner">
+                            <a href="#">
+                                <img src="https://cdn.daisomall.co.kr/file/DS/20240729/dlC8Zp2gfhjW4IHDS9vqpc_상품상세_신규유입 혜택 쿠폰_띠배너_이미지dlC8Zp2gfhjW4IHDS9vq.jpg"
+                                    alt="신규가입 혜택 안내">
+                            </a>
+
+                        </div>
+                        <div class="el-select option-select">
+                            <select name="pro_color" id="pro_color">
+                                <option value="네이비">네이비</option>
+                                <option value="그린">그린</option>
+                            </select>
+                        </div>
+                        <div class="product-side__bottom">
+                            <div class="buy">
+                                <strong>총 0개</strong>
+                                <div class="price">
+                                    <span>0</span>
+                                    <p>원</p>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <button class="like">
+                                    <span>
+                                        <i>좋아요</i>
+                                    </span>
+                                </button>
+                                <button class="dir-buy">
+                                    바로구매
+                                </button>
+                                <button class="basket">
+                                    장바구니 담기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 아래영역 -->
+                <!-- 실시간 포토리뷰 -->
+                <div class="product-riv__img">
+                    <div class="product-riv__img__tit">
+                        <div class="product-riv__img__txt">
+                            <h2>실시간 포토리뷰</h2>
+                            <span class="star">
+                                <i>별</i>
+                            </span>
+                            <span>5.0점 (3)</span>
+                        </div>
+
+                        <button>
+                            <a href="#" class="more">
+                                <p>전체보기</p>
+                                <span>
+                                    <i>아이콘</i>
+                                </span>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="swiper mySwiper swiper-review">
+                        <div class="swiper-wrapper goods-thumb-container">
+                            <div class="swiper-slide slide1">
+                                <strong>5.0</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20241003/MjKkJRiNCSag1wexPHmkMjKkJRiNCSag1wexPHmk.jpg/dims/resize/200/quality/90"
+                                    alt="Slide2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240925/n82GxFBfKIJmCJV7m4Tzn82GxFBfKIJmCJV7m4Tz.jpg/dims/resize/200/quality/90"
+                                    alt="Slide3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240828/uaYi6utSQcG7j247B6LNuaYi6utSQcG7j247B6LN.jpeg/dims/resize/200/quality/90"
+                                    alt="Slide4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240822/oPJjSUs3kEnmUnErmalUoPJjSUs3kEnmUnErmalU.jpg/dims/resize/200/quality/90"
+                                    alt="Slide5">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240817/4Lzvijnytd4gfOA7CyOD4Lzvijnytd4gfOA7CyOD.jpg/dims/resize/200/quality/90"
+                                    alt="Slide6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240816/DoGFdXcmYJJ2rmsss2HPDoGFdXcmYJJ2rmsss2HP.jpg/dims/resize/200/quality/90"
+                                    alt="Slide7">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240723/CilHoD2Gh130lMSluBQSCilHoD2Gh130lMSluBQS.jpg/dims/resize/200/quality/90"
+                                    alt="Slide8">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240718/sJUS4emMbK9Gxk4rmuaTsJUS4emMbK9Gxk4rmuaT.MOV/xcdr/capture/ts=1/dims/resize/200/quality/90"
+                                    alt="Slide9">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240817/4Lzvijnytd4gfOA7CyOD4Lzvijnytd4gfOA7CyOD.jpg/dims/resize/200/quality/90"
+                                    alt="Slide6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240816/DoGFdXcmYJJ2rmsss2HPDoGFdXcmYJJ2rmsss2HP.jpg/dims/resize/200/quality/90"
+                                    alt="Slide7">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240723/CilHoD2Gh130lMSluBQSCilHoD2Gh130lMSluBQS.jpg/dims/resize/200/quality/90"
+                                    alt="Slide8">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20240718/sJUS4emMbK9Gxk4rmuaTsJUS4emMbK9Gxk4rmuaT.MOV/xcdr/capture/ts=1/dims/resize/200/quality/90"
+                                    alt="Slide9">
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                    <!-- 리뷰 스와이퍼 -->
+                </div>
+            </div>
+            <!-- 밑에 내용 -->
+            <div class="product-wrap">
+                <div class="inner">
+                    <!-- 왼쪽 컨텐츠 (상품설명 / 리뷰 / 상품정보) -->
+                    <div class="product-cont">
+                        <div class="product-cont__nav">
+                            <ul class="product-cont__lst">
+                                <li>
+                                    <a href="#product-des">상품설명</a>
+                                </li>
+                                <li>
+                                    <a href="#product-riv">리뷰</a>
+                                </li>
+                                <li>
+                                    <a href="#product-inf">상품정보</a>
+                                </li>
+                            </ul>
+                            <div class="product-cont__con">
+                                <!-- 상품설명 -->
+                                <div id="product-des">
+                                    <img src="https://cdn.daisomall.co.kr/file/PD/20231124/CU7wqhsthRkyyKUGUZj61036271_01_01CU7wqhsthRkyyKUGUZj6.jpg/dims/resize/850/quality/100"
+                                        alt="상품설명">
+                                </div>
+                                <!-- 리뷰 -->
+                                <div id="product-riv">
+                                    <div class="product-riv__tit tit-area">
+                                        <h2>리뷰
+                                            <em>3</em>
+                                        </h2>
+                                    </div>
+                                    <div class="product-riv__rate">
+                                        <strong>5.0</strong>
+                                        <div class="rate__icons">
+                                            <span class="rate__icon">
+                                                <i>별</i>
+                                            </span>
+                                            <span class="rate__icon">
+                                                <i>별</i>
+                                            </span>
+                                            <span class="rate__icon">
+                                                <i>별</i>
+                                            </span>
+                                            <span class="rate__icon">
+                                                <i>별</i>
+                                            </span>
+                                            <span class="rate__icon">
+                                                <i>별</i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 색상 -->
+                                    <div class="product-riv__cat-wrap">
+                                        <div class="product-riv__cat">
+                                            <button class="product-riv__cat-tit">
+                                                <span>색상</span>
+                                                <div class="color-tit">
+                                                    <p>화면과 같아요</p>
+                                                    <strong>100%</strong>
+                                                </div>
+                                            </button>
+                                            <div class="el-collapse-item__wrap">
+                                                <div class="el-collapse-item__content el-collapse-item__content_1">
+                                                    <div class="rating-score-list">
+                                                        <p>화면과 같아요</p>
+                                                        <span>100%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar1"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_2">
+                                                    <div class="rating-score-list">
+                                                        <p>화면과 비슷해요</p>
+                                                        <span>0%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar2"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_3">
+                                                    <div class="rating-score-list">
+                                                        <p>화면과 달라요</p>
+                                                        <span>0%</span>
+                                                    </div>
+                                                    <div class="progressbar bar3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 디자인 -->
+                                        <div class="product-riv__cat">
+                                            <button class="product-riv__cat-tit">
+                                                <span>디자인</span>
+                                                <div class="color-tit">
+                                                    <p>마음에 들어요</p>
+                                                    <strong>100%</strong>
+                                                </div>
+                                            </button>
+                                            <div class="el-collapse-item__wrap">
+                                                <div class="el-collapse-item__content el-collapse-item__content_1">
+                                                    <div class="rating-score-list">
+                                                        <p>아주 마음에 들어요</p>
+                                                        <span>100%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar1"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_2">
+                                                    <div class="rating-score-list">
+                                                        <p>마음에 들어요</p>
+                                                        <span>0%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar2"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_3">
+                                                    <div class="rating-score-list">
+                                                        <p>마음에 들지 않아요</p>
+                                                        <span>0%</span>
+                                                    </div>
+                                                    <div class="progressbar bar3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 크기 -->
+                                        <div class="product-riv__cat">
+                                            <button class="product-riv__cat-tit">
+                                                <span>크기</span>
+                                                <div class="color-tit">
+                                                    <p>적당해요</p>
+                                                    <strong>100%</strong>
+                                                </div>
+                                            </button>
+                                            <div class="el-collapse-item__wrap">
+                                                <div class="el-collapse-item__content el-collapse-item__content_1">
+                                                    <div class="rating-score-list">
+                                                        <p>생각보다 커요</p>
+                                                        <span>100%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar1"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_2">
+                                                    <div class="rating-score-list">
+                                                        <p>적당해요</p>
+                                                        <span>0%</span>
+
+                                                    </div>
+                                                    <div class="progressbar bar2"></div>
+                                                </div>
+                                                <div class="el-collapse-item__content el-collapse-item__content_3">
+                                                    <div class="rating-score-list">
+                                                        <p>생각보다 작아요</p>
+                                                        <span>0%</span>
+                                                    </div>
+                                                    <div class="progressbar bar3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <!-- 사진 & 동영상 -->
+                                    <div class="product-riv__img">
+                                        <div class="product-riv__img__tit">
+                                            <h3>사진&동영상</h3>
+                                            <button>
+                                                <a href="#" class="more">
+                                                    <p>전체보기</p>
+                                                    <span>
+                                                        <i>아이콘</i>
+                                                    </span>
+                                                </a>
+                                            </button>
+                                        </div>
+                                        <div class="swiper mySwiper swiper-pic">
+                                            <div class="swiper-wrapper goods-thumb-container">
+                                                <div class="swiper-slide slide1">
+                                                    <strong>5.0</strong>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20241003/MjKkJRiNCSag1wexPHmkMjKkJRiNCSag1wexPHmk.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide2">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240925/n82GxFBfKIJmCJV7m4Tzn82GxFBfKIJmCJV7m4Tz.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide3">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240828/uaYi6utSQcG7j247B6LNuaYi6utSQcG7j247B6LN.jpeg/dims/resize/200/quality/90"
+                                                        alt="Slide4">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240822/oPJjSUs3kEnmUnErmalUoPJjSUs3kEnmUnErmalU.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide5">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240817/4Lzvijnytd4gfOA7CyOD4Lzvijnytd4gfOA7CyOD.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide6">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240816/DoGFdXcmYJJ2rmsss2HPDoGFdXcmYJJ2rmsss2HP.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide7">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240723/CilHoD2Gh130lMSluBQSCilHoD2Gh130lMSluBQS.jpg/dims/resize/200/quality/90"
+                                                        alt="Slide8">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="https://cdn.daisomall.co.kr/file/PD/20240718/sJUS4emMbK9Gxk4rmuaTsJUS4emMbK9Gxk4rmuaT.MOV/xcdr/capture/ts=1/dims/resize/200/quality/90"
+                                                        alt="Slide9">
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+
+                                        </div>
+                                        <!-- 리뷰 스와이퍼 -->
+                                    </div>
+
+                                    <!-- 리뷰 내용글 -->
+                                    <div class="product-riv__con">
+                                        <div class="product-cont__con-tit-wrap">
+                                            <div class="product-riv__con-tit">
+                                                <input type="radio" name="view" value="full">전체
+                                                <input type="radio" name="view" value="repu">재구매
+                                            </div>
+                                            <div class="option-order">
+                                                <select name="order" id="order">
+                                                    <option value="추천순">추천순</option>
+                                                    <option value="최신순">최신순</option>
+                                                    <option value="최신순">별점높은순</option>
+                                                    <option value="최신순">별점낮은순</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-riv__con-wir-wrap">
+                                            <div class="product-riv__con-wir">
+                                                <div class="user">
+                                                    <div class="user__wrap">
+                                                        <div class="user-img">
+                                                            <img src="https://www.daisomall.co.kr/images/icon/profile_noimg.png"
+                                                                alt="user-img">
+                                                        </div>
+                                                        <div class="user-id">
+                                                            <p>day****</p>
+                                                        </div>
+                                                        <div class="user-sco">
+                                                            <span class="star"><i>별</i></span>
+                                                            <span class="score">5점</span>
+                                                            <span>2024-11-06</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="report">
+                                                        <span>
+                                                            <i>신고하기버튼</i>
+                                                        </span>
+                                                        <div class="report-act">
+                                                            <p>신고하기</p>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div class="user-rating">
+                                                    <div class="user-color">
+                                                        <span>색상</span>
+                                                        <span>화면과 같아요</span>
+                                                    </div>
+                                                    <div class="user-des">
+                                                        <span>디자인</span>
+                                                        <span>마음에 들어요</span>
+                                                    </div>
+                                                    <div class="user-siz">
+                                                        <span>크기</span>
+                                                        <span>적당해요</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-wri">
+                                                    <div class="user-wri__opt">
+                                                        <p>옵션 : 카키</p>
+                                                    </div>
+                                                    <div class="user-wri__con">
+                                                        <pre>
+        일반 접이식 우산~ 매장에서 사서 써보고
+        아이들 것도 주문했어요. 우산 접을때 안전캡이 있어서
+        좋아요.
+                                                        </pre>
+                                                    </div>
+                                                    <button class="help-cou">
+                                                        <span>도움돼요</span>
+                                                        <span class="help-btn">
+                                                            <i>도움돼요버튼</i>
+                                                        </span>
+                                                        <span class="counting">1</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-riv__con-wir">
+                                                <div class="user">
+                                                    <div class="user__wrap">
+                                                        <div class="user-img">
+                                                            <img src="https://www.daisomall.co.kr/images/icon/profile_noimg.png"
+                                                                alt="user-img">
+                                                        </div>
+                                                        <div class="user-id">
+                                                            <p>yoa****</p>
+                                                        </div>
+                                                        <div class="user-sco">
+                                                            <span class="star"><i>별</i></span>
+                                                            <span class="score">5점</span>
+                                                            <span>2024-11-06</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="report">
+                                                        <span>
+                                                            <i>신고하기버튼</i>
+                                                        </span>
+                                                        <div class="report-act">
+                                                            <p>신고하기</p>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div class="user-rating">
+                                                    <div class="user-color">
+                                                        <span>색상</span>
+                                                        <span>화면과 같아요</span>
+                                                    </div>
+                                                    <div class="user-des">
+                                                        <span>디자인</span>
+                                                        <span>마음에 들어요</span>
+                                                    </div>
+                                                    <div class="user-siz">
+                                                        <span>크기</span>
+                                                        <span>적당해요</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-wri">
+                                                    <div class="user-wri__opt">
+                                                        <p>옵션 : 카키</p>
+                                                    </div>
+                                                    <div class="user-wri__con">
+                                                        <pre>
+        일반 접이식 우산~ 매장에서 사서 써보고
+        아이들 것도 주문했어요. 우산 접을때 안전캡이 있어서
+        좋아요.
+                                                        </pre>
+                                                    </div>
+                                                    <button class="help-cou">
+                                                        <span>도움돼요</span>
+                                                        <span class="help-btn">
+                                                            <i>도움돼요버튼</i>
+                                                        </span>
+                                                        <span class="counting">1</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="product-riv__con-wir">
+                                                <div class="user">
+                                                    <div class="user__wrap">
+                                                        <div class="user-img">
+                                                            <img src="https://www.daisomall.co.kr/images/icon/profile_noimg.png"
+                                                                alt="user-img">
+                                                        </div>
+                                                        <div class="user-id">
+                                                            <p>yoo****</p>
+                                                        </div>
+                                                        <div class="user-sco">
+                                                            <span class="star"><i>별</i></span>
+                                                            <span class="score">5점</span>
+                                                            <span>2024-11-06</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="report">
+                                                        <span>
+                                                            <i>신고하기버튼</i>
+                                                        </span>
+                                                        <div class="report-act">
+                                                            <p>신고하기</p>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                <div class="user-rating">
+                                                    <div class="user-color">
+                                                        <span>색상</span>
+                                                        <span>화면과 같아요</span>
+                                                    </div>
+                                                    <div class="user-des">
+                                                        <span>디자인</span>
+                                                        <span>마음에 들어요</span>
+                                                    </div>
+                                                    <div class="user-siz">
+                                                        <span>크기</span>
+                                                        <span>적당해요</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-wri">
+                                                    <div class="user-wri__opt">
+                                                        <p>옵션 : 카키</p>
+                                                    </div>
+                                                    <div class="user-wri__con">
+                                                        <pre>
+        일반 접이식 우산~ 매장에서 사서 써보고
+        아이들 것도 주문했어요. 우산 접을때 안전캡이 있어서
+        좋아요.
+                                                        </pre>
+                                                    </div>
+                                                    <button class="help-cou">
+                                                        <span>도움돼요</span>
+                                                        <span class="help-btn">
+                                                            <i>도움돼요버튼</i>
+                                                        </span>
+                                                        <span class="counting">1</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 상품정보 -->
+                                <div id="product-inf">
+                                    <div data-v-3cf343c0="" class="tab-cont info">
+                                        <div class="tit-area">
+                                            <h2 class="tit-h2">
+                                                상품정보 제공 고시
+                                            </h2>
+                                        </div> <!---->
+                                        <ul class="info-list data">
+                                            <li>
+                                                <div class="item">
+                                                    1. 품명 및 모델명
+                                                </div>
+                                                <div class="val">
+                                                    컬러완전자동3단우산(그린/네이비)
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    3. 제조국 또는 원산지
+                                                </div>
+                                                <div class="val">
+                                                    중국
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    4. 제조자, 수입품의 경우 수입자를 함께 표기
+                                                </div>
+                                                <div class="val">
+                                                    (주)아성에이치엠피(국내)
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <h3 class="tit-h4">
+                                            반품/교환/환불 안내
+                                        </h3>
+                                        <div class="detail-info-cont">
+                                            <ul class="info-list data">
+                                                <li>
+                                                    <div class="item">
+                                                        교환/반품 비용
+                                                    </div>
+                                                    <div class="val">
+                                                        <p>단순변심 및 상품 옵션 불만과 관련된 교환/반품 신청은 상품을 받으신 날부터 7일 이내에 신청 가능합니다.
+                                                        </p>
+                                                        <p class="txt-list dot">
+                                                            상품 불량/하자 또는 상품이 표기/광고 내용과 다르거나 계약 내용과 다른 경우, 상품을 받으신 날부터 3개월
+                                                            이내 또는
+                                                            사실을 알게된 날(알 수 있었던 날) 30일 이내에 신청 가능합니다.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        교환/반품 안내사항
+                                                    </div>
+                                                    <div class="val"><strong class="txt-list-tit">[ 주문 종류별 교환/반품 정책 안내
+                                                            ]</strong>
+                                                        <div class="txt-list-box"><strong>1. 택배배송/정기배송</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    교환 : 다이소몰에서 교환 신청 후 택배를 통해 회수 후 재배송
+                                                                </li>
+                                                                <li>
+                                                                    반품 : 다이소몰에서 반품 신청 후 택배를 통해 회수 후 환불
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-list-box"><strong>2. 매장픽업</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    교환 : 구매 매장 또는 가까운 다이소 직영점에 직접 방문 후 교환 가능<br>(※ 온라인
+                                                                    접수 및 택배
+                                                                    교환 불가)
+                                                                </li>
+                                                                <li>
+                                                                    반품 : 다이소몰에서 반품 신청 후 구매 매장으로 직접 방문하여 반품
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-list-box"><strong>3. 대량주문</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    교환 : 신청 불가
+                                                                </li>
+                                                                <li>
+                                                                    반품(배송) : 다이소몰에서 반품 신청 후 택배(화물차량)을 통해 회수 후 환불
+                                                                </li>
+                                                                <li>
+                                                                    반품(직접 수령) : 다이소몰에서 반품 신청 후 구매 매장으로 직접 방문하여 반품 (※ 택배
+                                                                    반품 불가)
+                                                                </li>
+                                                                <li>
+                                                                    상품 부족으로 인해 교환 재배송이 불가능할 경우, 상품 금액을 환불처리해드립니다.
+                                                                </li>
+                                                                <li>
+                                                                    교환 사유에 따라 교환 처리가 불가능할 경우, 회수된 상품은 다시 되돌려 드립니다.
+                                                                </li>
+                                                                <li>
+                                                                    교환/반품에 관한 일반적인 사항은 다이소몰의 개별 기준보다 관계법령이 우선합니다. 다만,
+                                                                    다이소몰의
+                                                                    교환/반품 정책이 관계법령보다 소비자에게 유리한 경우에는 다이소몰 기준으로 적용됩니다.
+                                                                </li>
+                                                                <li>
+                                                                    상품의 교환, 환불 및 상품 결함 등의 보상은 소비자분쟁해결기준에 의해 처리됩니다.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        교환/반품 안내사항
+                                                    </div>
+                                                    <div class="val">
+                                                        <p>교환/반품 비용은 교환/반품 신청 단계에서 미리 결제해주셔야 합니다.</p> <strong
+                                                            class="txt-list-tit">[ 주문 종류별 교환/반품 비용
+                                                            ]</strong>
+                                                        <div class="txt-list-box"><strong>1. 택배배송/정기배송</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    교환 : 6,000원 (회수 택배비 3,000원 + 재배송 택배비 3,000원)
+                                                                </li>
+                                                                <li>
+                                                                    반품 : 3,000원 (회수 택배비 3,000원)
+                                                                </li>
+                                                                <li>
+                                                                    주문 시 무료배송/배송비 할인 혜택을 받았으나 반품으로 인해 무료배송(배송비 할인) 조건이
+                                                                    깨질 경우,
+                                                                    ‘배송비 혜택 회수’ 금액이 추가로 발생할 수 있습니다.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-list-box"><strong>2. 매장픽업/대량주문(직접 수령)</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    무료
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-list-box"><strong>3. 대량주문(배송)</strong>
+                                                            <ul class="txt-list dot">
+                                                                <li>
+                                                                    택배배송/정기배송과 동일
+                                                                </li>
+                                                                <li>
+                                                                    반품 신청 수량에 따라 택배 회수가 어려울 경우 화물차량으로 회수가 진행될 수 있으며,
+                                                                    화물차량 비용으로
+                                                                    인해 추가 배송비가 발생할 수 있습니다.
+                                                                </li>
+                                                                <li>
+                                                                    당사의 실수로 인한 교환/반품 사유일 경우, 신청 단계에서 결제하신 금액을
+                                                                    환불해드립니다.<br>(예시 :
+                                                                    상품 불량/하자, 상품이 표기/광고 내용과 다르거나 계약 내용과 다른 경우 등)
+                                                                </li>
+                                                                <li>
+                                                                    단순변심으로 인한 교환/반품 사유일 경우, 결제하신 금액은 환불되지 않습니다.<br>(예시 :
+                                                                    단순변심,
+                                                                    상품 옵션 불만 등)
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        교환/반품 불가 안내
+                                                    </div>
+                                                    <div class="val">
+                                                        <p>전자상거래 등에서의 소비자 보호에 관한 법률(전자상거래법)에 따라, 아래의 경우는 청약철회가 제한될 수
+                                                            있습니다.</p>
+                                                        <ul class="txt-list">
+                                                            <li>
+                                                                1. 소비자에게 책임이 있는 사유로 재화 등이 멸실되거나 훼손된 경우 (다만, 재화 등의 내용물을
+                                                                확인하기 위하여
+                                                                포장 등을 훼손한 경우는 제외)
+                                                            </li>
+                                                            <li>
+                                                                2. 소비자의 사용 또는 일부 소비로 재화 등의 가치가 현저히 감소한 경우
+                                                            </li>
+                                                            <li>
+                                                                3. 시간이 지나 다시 판매하기 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우
+                                                            </li>
+                                                            <li>
+                                                                4. 복제가 가능한 재화 등의 포장을 훼손한 경우
+                                                            </li>
+                                                            <li>
+                                                                5. 용역 또는 「문화산업진흥기본법」 제2조 제5호의 디지털콘텐츠의 제공이 개시된 경우
+                                                            </li>
+                                                            <li>
+                                                                6. 소비자의 주문에 따라 개별적으로 생산되는 재화 등 또는 이와 유사한 재화 등에 대하여
+                                                                통신판매업자에게 회복할
+                                                                수 없는 중대한 피해가 예상되는 경우
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        모바일상품권<br>취소/환불 규정 안내
+                                                    </div>
+                                                    <div class="val">
+                                                        <p>결제 취소 등 전액 환불은 미사용 상품권에 한 해 가능합니다.</p>
+                                                        <div class="txt-list-box">
+                                                            <ul class="txt-list dot">
+                                                                <li>구매자는 구매일로부터 7일 이내에 미사용 상품권의 결제금액을 취소/환불 신청할 수 있습니다.
+                                                                </li>
+                                                                <li>결제금액 환불은 주문 시 결제한 수단으로 처리됩니다.</li>
+                                                                <li>구매일로부터 7일이 지나면 수신자가 미사용 상품권에 한 해 발행처로 직접 환불 요청할 수
+                                                                    있습니다.</li>
+                                                                <li>상품권 권종 별 잔액 환불 기준에 따라 발행처로 잔액 환불 요청을 할 수 있습니다.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="txt-list-box"><strong>[ 잔액 환불 기준 ]</strong>
+                                                            <ul class="txt-list">
+                                                                <li>① 1만 원 이하 상품권 : 80% 이상 사용 시 잔액 환불 가능</li>
+                                                                <li>② 1만 원 초과 상품권 : 60% 이상 사용 시 잔액 환불 가능</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="txt-list">
+                                                            ※ 모바일 상품권 고객센터 : 1688-9876
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 오른쪽 사이드바 -->
+                    <div class="product-side">
+                        <div class="product-side__top">
+                            <div class="product-side__img">
+                                <img src="https://cdn.daisomall.co.kr/file/PD/20231129/X6HfMTujh7a6KdCKFCXS1036271_00_00X6HfMTujh7a6KdCKFCXS.jpg/dims/resize/600/quality/95"
+                                    alt="product-img">
+                                <p>컬러 완전자동 3단 우산 (그린,네이비)</p>
+                            </div>
+
+                            <div class="el-select option-select side_select">
+                                <select name="pro_color" id="pro_color">
+                                    <option value="네이비">네이비</option>
+                                    <option value="그린">그린</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="product-side__bottom">
+                            <div class="buy">
+                                <strong>총 0개</strong>
+                                <div class="price">
+                                    <span>0</span>
+                                    <p>원</p>
+                                </div>
+                            </div>
+                            <div class="button-wrap">
+                                <button class="like">
+                                    <span>
+                                        <i>좋아요</i>
+                                    </span>
+                                </button>
+                                <button class="dir-buy">
+                                    바로구매
+                                </button>
+                                <button class="basket">
+                                    장바구니 담기
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer-container">
+                <!-- 고객센터 섹션 -->
+                <div class="footer-section cs">
+                    <h3>고객센터</h3>
+                    <div class="cs-1">
+                        <h3>온라인 다이소몰</h3>
+                        <span class="tel">1599-2211</span>
+                        <br />
+                        <span class="time">평일 09:00 - 18:00</span>
+                        <div class="cs-1-1">
+                            <div class="cs-1-1-1">
+                                <span><a href="#">주문조회</a></span>
+                                <span><a href="#">취소/교환/반품 신청</a></span>
+                            </div>
+
+                            <span><a href="#">1:1문의</a></span>
+                            <span><a href="#">공지사항</a></span>
+                            <span><a href="#">제휴문의</a></span>
+                            <span><a href="#">고객센터</a></span>
+                        </div>
+                    </div>
+                    <div class="cs-2">
+                        <h3>다이소 매장</h3>
+                        <span class="tel">1522-4400</span>
+                        <br />
+                        <span class="time">평일 09:00 - 18:00</span>
+                        <div class="cs-2-1">
+                            <span><a href="#">매장위치/재고</a></span>
+                            <span><a href="#">1:1문의</a></span>
+                            <span><a href="#">고객센터</a></span>
+                            <span><a href="#">제휴문의</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 멤버십 섹션 -->
+                <div class="footer-section membership">
+                    <h3>멤버십</h3>
+                    <ul>
+                        <li><a href="#">멤버십 소개</a></li>
+                        <li><a href="#">포인트 적립/사용내역</a></li>
+                        <li><a href="#">포인트 선물하기</a></li>
+                        <li><a href="#">멤버십 패밀리</a></li>
+                    </ul>
+                </div>
+
+                <!-- 회사소개 섹션 -->
+                <div class="footer-section introduction">
+                    <h3>회사소개</h3>
+                    <ul>
+                        <li><a href="#">기업 소개</a></li>
+                        <li><a href="#">국민가게, 다이소</a></li>
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">납품문의</a></li>
+                        <li><a href="#">인테리어 업체 제휴문의</a></li>
+                        <li><a href="#">가맹문의</a></li>
+                    </ul>
+                </div>
+
+                <!-- 소셜 아이콘 섹션 -->
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-line"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <!-- 앱 스토어 버튼 -->
+                <div class="store-buttons">
+                    <a href="#"><img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/googleplay.png"
+                            alt="Google Play" /></a>
+                    <a href="#"><img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/appstore.png"
+                            alt="App Store" /></a>
+                    <a href="#"><img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/inquiry.svg"
+                            alt="inquiry" /></a>
+                </div>
+                <div class="aside_wrap">
+                    <address class="copyright">Copyright (c) 2023 DAISO. All Rights Reserved.</address>
+                    <!-- 서비스 이용약관 및 개인정보 처리방침 링크 추가 -->
+                    <div class="aside">
+                        <a href="#">서비스 이용약관</a>
+                        <a href="#">개인정보 처리방침</a>
+                        <a href="#">청소년 보호정책</a>
+                        <a href="#">위치기반서비스 이용약관</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 하단부 섹션 -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-1">
+                    <h3>(주)아성다이소</h3>
+                    <div class="footer-bottom-1-1">
+                        <ul class="Certified">
+                            <li>
+                                <img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_1.svg"
+                                    alt="소비자중심경영 인증" />소비자중심경영 인증
+                            </li>
+                            <li>
+                                <img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_2.svg"
+                                    alt="품질경영시스템 인증" />품질경영시스템 인증
+                            </li>
+                            <li>
+                                <img src="/study/작업물/cloneCoding/DaisoMall/components/footer/images/certification_3.png"
+                                    alt="위해상품 차단시스템 운영매장" />위해상품 차단시스템 운영매장
+                            </li>
+                        </ul>
+                        <div class="address">
+                            <div class="address-1">
+                                <span>대표 : 김기호 |</span>
+                                <span>사업자등록번호 : 213-81-52063 |</span>
+                                <span><a href="#">사업자정보 확인</a></span>
+                            </div>
+                            <div class="address-2">
+                                <span>통신판매신고번호 : 2008-서울강남-1525 |</span>
+                                <span>주소 : 서울특별시 강남구 남부순환로 2748 아성(ASUNG) |</span>
+                                <span>개인정보 및 청소년 보호 책임자 : 조태진</span>
+                            </div>
+                            <span>다이소몰은 현금 결제 금액에 대한 안전거래를 보장하기 위하여 우리은행과 채무지급보증서
+                                계약을 체결하였습니다. |</span>
+                            <span><a href="#">서비스 가입 확인</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-2">
+                    <select class="family-site">
+                        <option value="0" disabled selected>패밀리사이트</option>
+                        <option value="1">아성</option>
+                        <option value="2">아성 HMP</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
