@@ -3,7 +3,7 @@
 
 * {
     font-family: Pretendard;
-    font-weight: 400px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -118,7 +118,7 @@
     width: 1280px;
     height: 480px;
     position: relative;
-    margin: 0 auto;
+    margin: 35px auto;
     overflow: hidden;
 }
 .swiper-container2 .swiper-slide {
@@ -136,20 +136,60 @@
     height: 100px;
     padding: 22px 0;
 }
-.swiper-container2 .swiper-button-prev,
-.swiper-button-next {
+.swiper-container2 .swiper-button-prev {
     color: #000;
     font-size: 24px;
     position: absolute;
-    top: 32%; /* 수직 중앙 */
+    top: 43%;
     transform: translateY(-50%);
     z-index: 10;
     width: 40px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.swiper-container2 .swiper-button-next {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container-text {
+    height: 50px;
+    width: auto;
+    display: flex;
+}
+.container-text h2 {
+    font-size: 30px;
+}
+.container-text span {
+    font-size: 30px;
+    color: #646f7c;
+}
+.container-text a {
+    margin-left: 1000px;
+    padding: 5px 0;
+}
+.container-text a span {
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+}
+.contentList {
+    width: 1380px;
+    height: 665px;
+    margin: 50px auto;
+    overflow: hidden;
 }
